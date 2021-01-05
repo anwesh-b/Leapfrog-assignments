@@ -1,3 +1,35 @@
-.header-wrapper a{
+.main-content{
+    color: #898989;
+}   
+
+.main-content h4{
+    color: black;
+}
+
+.main-content a{
+    color: #59b4c6;
+}
+
+.subscription{
+    color: #6e931f;
+}
+
+.submit a{
     color: white;
+}
+
+.submit a:hover{
+    color: #d5d5d5;
+}
+
+.list-item-details.imp{
+    color: #d43f1e;
+}
+
+.footer-left a{
+    color: #d5d5d5;
+}
+
+.footer-left a:hover{
+    text-decoration: underline;
 }

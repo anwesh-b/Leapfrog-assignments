@@ -1,7 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -16,26 +15,26 @@
             <div class="header-top-mid">
                 <input type="text">
                 <div class="submit">
-                    <a href="#search">
-                        <div class="submit-wrap">
-                            <img src="image/submit-right.jpg" alt="s-lt">
-                            <span class="span-text">
-                                SEARCH
-                            </span>
-                            <img src="image/submit-left.jpg" alt="s-rt">
-                        </div>
+                    <a href="#search" class="submit-wrap">
+                        <img src="image/submit-right.jpg" alt="s-lt">
+                        <span class="span-text">
+                            SEARCH
+                        </span>
+                        <img src="image/submit-left.jpg" alt="s-rt">
                     </a>
                 </div>
             </div>
             <div class="header-top-right">
                 <span class="header-top-right-top">
-                    Joe Burros
+                    <a href="self">
+                        Joe Burros  
+                    </a>
                 </span>
                 <div class="header-top-right-bottom">
                     <ul>
-                        <li>Home</li>
-                        <li>Settings</li>
-                        <li>Log Out</li>
+                        <li><a href="#user-home">Home</a></li>
+                        <li><a href="#user-settings">Settings</a></li>
+                        <li><a href="#user-logout">Log Out</a></li>
                     </ul>
                 </div>
             </div>
@@ -45,21 +44,25 @@
             <div class="content">
                 <div class="header-bottom-left">
                     <ul>
-                        <li>Create New Entry</li>
-                        <li>My Topic Boxes</li>
-                        <li>Friends</li>
-                        <li>Invite New Member</li>
+                        <li><a href="#nav">Create New Entry</a></li>
+                        <li><a href="#nav">My Topic Boxes</a></li>
+                        <li><a href="#nav">Friends</a></li>
+                        <li><a href="#nav">Invite New Member</a></li>
                     </ul>
                 </div>
                 <div class="header-bottom-right">
                     <ul>
                         <li class="header-bottom-right-details">
-                            <img src="image/user.jpg" alt="user">
-                            Friend Requests - <span>0</span>
+                            <a href="#nav">
+                                <img src="image/user.jpg" alt="user">
+                                Friend Requests - <span>0</span>
+                            </a>
                         </li>
                         <li class="header-bottom-right-details active">
-                            <img src="image/invite.jpg" alt="invt">
-                            Topic Boxes Invites - <span>2</span>
+                            <a href="#nav">
+                                <img src="image/invite.jpg" alt="invt">
+                                Topic Boxes Invites - <span>2</span>
+                            </a>  
                         </li>
                     </ul>
                 </div>
@@ -72,17 +75,19 @@
                     <div class="main-side-title main-side-content-title">
                         Recent Searches
                     </div>
-                    <ul class="main-side-content">
+                    <ul>
                         <li class="main-side-list">
-                            <!-- <div class="list-text"> -->
+                            <div class="list-text">
                                 Nick Cave and the Bad Seeds 
-                            <!-- </div> -->
+                            </div>
                             <div class="main-side-content-img">
                                 <img src="image/download.jpg" alt="download">
                             </div>
                         </li>
                         <li class="main-side-list">
-                            African Animals
+                            <div class="list-text">
+                                African Animals
+                            </div>
                             <div class="main-side-content-img">
                                 <img src="image/download.jpg" alt="download">
                             </div>
@@ -91,39 +96,39 @@
                     <div class="main-side-title main-side-content-title">
                         Recent Searches
                     </div>
-                    <ul class="main-side-content">
+                    <ul>
                         <li class="main-side-list">
-                            Different versions of the Tristan Und Isolde Prelude
+                            <div class="list-text">Different versions of the Tristan Und Isolde Prelude</div>
                             <div class="main-side-content-img">
                                 <img src="image/lines.jpg" alt="lines">
                             </div>
                         </li>
                         <li class="main-side-list">
-                            Music
+                            <div class="list-text">Music</div>
                             <div class="main-side-content-img">
                                 <img src="image/lines.jpg" alt="lines">
                             </div>
                         </li>
                         <li class="main-side-list">
-                            Guitar
+                            <div class="list-text">Guitar</div>
                             <div class="main-side-content-img">
                                 <img src="image/lines.jpg" alt="lines">
                             </div>
                         </li>
                         <li class="main-side-list">
-                            Bob Cohen
+                            <div class="list-text">Bob Cohen</div>
                             <div class="main-side-content-img">
                                 <img src="image/lines.jpg" alt="lines">
                             </div>
                         </li>
                         <li class="main-side-list">
-                            Mark Schnack
+                            <div class="list-text">Mark Schnack</div>
                             <div class="main-side-content-img">
                                 <img src="image/lines.jpg" alt="lines">
                             </div>
                         </li>
                         <li class="main-side-list">
-                            Jefferson Dickey
+                            <div class="list-text">Jefferson Dickey</div>
                             <div class="main-side-content-img">
                                 <img src="image/lines.jpg" alt="lines">
                             </div>
@@ -134,7 +139,7 @@
                 <h1>Entries</h1>
                 <div class="main-division">
                     <div class="main-division-left">
-                        <img src="image/category-left.jpg">
+                        <img src="image/category-left.jpg" alt="cat-l">
                         <div class="main-division-top">
                             All Entries
                         </div>
@@ -185,9 +190,9 @@
                             <img src="image/user1.jpg" alt="user-img">
                         </div>
                         <div class="list-details">
-                            <div class="list-item-title">Day for Night by Francois Truffaut, a ground breaking film</div>
-                            <div class="list-item-details">by Alan Coe | February 10, 2012 | Subscribed</div>
-                            <div class="list-item-details">From Topic Box: My Favorite Movies</div>
+                            <h4 class="list-item-title">Day for Night by Francois Truffaut, a ground breaking film</h4>
+                            <div class="list-item-details">by <a href="#user">Alan Coe</a> | February 10, 2012 | <span class="subscription">Subscribed</span></div>
+                            <div class="list-item-details">From Topic Box: <a href="#user">My Favorite Movies</a></div>
                         </div>
                     </div>
                     <div class="main-list">
@@ -195,10 +200,10 @@
                             <img src="image/user2.jpg" alt="user-img">
                         </div>
                         <div class="list-details">
-                            <div class="list-item-details">NEW ENTRY!</div>
-                            <div class="list-item-title">Blade Runner, The Director's Cut</div>
-                            <div class="list-item-details">by Mary Pilot | February 8, 2012</div>
-                            <div class="list-item-details">From Topic Box: Behind the Scene</div>
+                            <div class="list-item-details"><a href="#user">NEW ENTRY!</a></div>
+                            <h4 class="list-item-title">Blade Runner, The Director's Cut</h4>
+                            <div class="list-item-details">by <a href="#user">Mary Pilot</a> | February 8, 2012</div>
+                            <div class="list-item-details">From Topic Box: <a href="#user">Behind the Scene</a></div>
                         </div>
                     </div>
                     <div class="main-list">
@@ -206,10 +211,10 @@
                             <img src="image/user3.jpg" alt="user-img">
                         </div>
                         <div class="list-details">
-                            <div class="list-item-details">NEW COMMENT!</div>
-                            <div class="list-item-title">The Best French Resturant in Chicago?</div>
-                            <div class="list-item-details">by Jim Roy | February 7, 2012</div>
-                            <div class="list-item-details">From Topic Box: Chicago Resturants Reviews</div>
+                            <div class="list-item-details"><a href="#user">NEW COMMENT!</a></div>
+                            <h4 class="list-item-title">The Best French Resturant in Chicago?</h4>
+                            <div class="list-item-details">by <a href="#user">Jim Roy</a> | February 7, 2012</div>
+                            <div class="list-item-details">From Topic Box: <a href="#user">Chicago Resturants Reviews</a></div>
                         </div>
                     </div>
                     <div class="main-list">
@@ -217,9 +222,9 @@
                             <img src="image/user4.jpg" alt="user-img">
                         </div>
                         <div class="list-details">
-                            <div class="list-item-title">The Meaning of Night. Dark Book but increadibly well written.</div>
-                            <div class="list-item-details">by John-Peter Moise | February 7, 2012 | Subscribed</div>
-                            <div class="list-item-details">From Topic Box: Books Read & Books to Read</div>
+                            <h4 class="list-item-title">The Meaning of Night. Dark Book but increadibly well written.</h4>
+                            <div class="list-item-details">by <a href="#user">John-Peter Moise</a> | February 7, 2012 | <span class="subscription">Subscribed</span> </div>
+                            <div class="list-item-details">From Topic Box: <a href="#user">Books Read & Books to Read</a></div>
                         </div>
                     </div>
                     <div class="main-list">
@@ -227,10 +232,10 @@
                             <img src="image/user5.jpg" alt="user-img">
                         </div>
                         <div class="list-details">
-                            <div class="list-item-details">TOPIC BOX INVITE!</div>
+                            <div class="list-item-details imp"> BOX INVITE!</div>
                             <div class="list-item-title">Pea Pesto</div>
-                            <div class="list-item-details">by Marianne Gig | February 6, 2012</div>
-                            <div class="list-item-details">From Topic Box: Favorite Recipes</div>
+                            <div class="list-item-details">by <a href="#user">Marianne Gig</a> | February 6, 2012</div>
+                            <div class="list-item-details">From Topic Box: <a href="#user">Favorite Recipes</a></div>
                         </div>
                     </div>
                 </div>
