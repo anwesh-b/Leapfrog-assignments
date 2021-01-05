@@ -1,0 +1,266 @@
+.header-wrapper{
+    background: red;  
+    overflow: hidden;
+}
+
+.body-wrapper{
+    background: green;
+    padding: 30px 0px 32px 0px;
+    overflow: hidden;
+}
+
+.footer-wrapper{
+    background: blue;
+    padding: 19px 0px 17px 0px;
+}
+
+.content{
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    width: 938px;
+    margin: 0 auto;
+    background: pink;
+    overflow: hidden;
+}
+
+.header-top{
+    background: skyblue;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0px 16px 0px;
+}
+.header-top-left{
+    width: 224px;
+    height: 47px;
+    background: crimson;
+    float: left;
+}
+
+.header-top-mid{
+    /* padding-left: 24px; */
+    width: 336px;
+    background: violet;
+    float: left;
+    height: 20px;
+    margin: 20px 24px 9px 24px;
+}
+
+
+.header-top-mid>input{
+    width: 275px;
+}
+
+.header-top-mid>button{
+    width: 53px;
+}
+
+.header-top-right{
+    width: 142px;
+    background: darkcyan;
+    float: right;
+    padding: 8px 0px 23px 0px;
+}
+
+.header-top-right-top{
+    /* width: 100%; */
+    background: violet;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.header-top-right-bottom{
+    width: 138px;
+    background: olive;
+    float: right;
+    margin: 0px 2px;
+}
+
+.header-bottom{
+    float: left;
+    background: tomato;
+    width: 100%;
+    overflow: hidden;
+    padding: 12px 0px;
+}
+
+.header-bottom-left{
+    width: 479px;
+    margin-left: 8px;
+    float: left;
+    background: salmon;
+}
+
+.header-bottom-right{
+    width: 320px;
+    float: right;
+    background: saddlebrown;
+}
+
+.header-bottom-right-details{
+    float: right;
+    width: 142px;
+    margin-left: 18px;
+    background: darkgreen;
+}
+
+.body-left{
+    float: left;
+    width: 194px;
+    background: purple;
+}
+
+.main-side-title{
+    background: lightblue;
+    width: 100%;
+    left: 12px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+}
+
+.main-side-content-title,.main-side-content-right{
+    padding-left: 12px;
+    padding-right: 14px;
+}
+.main-side-content-right{
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+.main-side-list{
+    padding-left: 11px;
+    width: 145 px;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-side-content{
+    padding-top: 5px;
+    padding-bottom: 5px; 
+}
+
+.main-side-content-img{
+    height: 12px;
+    width: 12px;
+    margin-right: 11px;
+    background: red;
+    float: right;
+}
+
+.main-left{
+    background: seashell;
+}
+
+.body-mid{
+    float: left;
+    width: 518px;
+    background: yellow;
+    padding: 0px 24px 0px 26px;
+}
+
+.main-division{
+    width: 100%;
+    background: wheat;
+}
+
+.main-division-left{
+    width: 258px;
+    float: left;
+    background: palevioletred;
+    overflow: hidden;
+}
+
+.main-division-right{
+    width: 258px;
+    float: right;
+    background: powderblue;
+    overflow: hidden;
+}
+
+.main-division-top{
+    width: 100px;
+    margin: 0 auto;
+    padding: 14px 0px 13px 0px;
+    background: chartreuse;
+}
+
+.main-division-bottom{
+    width: 248px;
+    margin: 0 auto;
+    background: cornsilk;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: hidden;
+}
+
+.content-type{
+    width: 114px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 0px 8px 0px;
+    float: left;
+    background: darkkhaki;
+}
+.main-content{
+    width: 100%;
+    background: red;
+    overflow: hidden;
+}
+
+.main-list{
+    background: peru;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.list-img{
+    width: 70px;
+    height: 70px;
+    float: left;
+    background: darkorchid;
+}
+
+.list-details{
+    padding: 0px 9px;
+    width: 430px;
+    float: left;
+    background: darkslategrey;
+}
+
+.list-item-title{
+    /* width: 100%; */
+    float: left;
+    margin-left: 1px;
+    width: 427px;
+    background: yellow;
+}
+
+.list-item-details{
+    width: 100%;
+    float: left;
+    background: yellowgreen;
+}
+
+.body-right{
+    float: right;
+    width: 176px;
+    background: yellowgreen;
+}
+
+.main-right{
+     background: rosybrown;
+}
+
+
+.footer-left{
+    float: left;
+    width: 326px;
+    background: violet;
+}
+
+.footer-right{
+    float: right;
+    width: 85px;
+    background: purple;
+    padding: 0px 5px 0px 6px;
+}
