@@ -4,7 +4,7 @@
 }
 
 .body-wrapper{
-    background: green;
+    background: white;
     padding: 30px 0px 32px 0px;
     overflow: hidden;
 }
@@ -22,7 +22,9 @@
     background: pink;
     overflow: hidden;
 }
-
+.body-wrapper>.content{
+    background: #f5f5f5;
+}
 .header-top{
     background: skyblue;
     width: 100%;
@@ -30,15 +32,15 @@
     padding: 20px 0px 16px 0px;
 }
 .header-top-left{
-    width: 224px;
-    height: 47px;
+    width: 223px;
+    height: 49px;
     background: crimson;
     float: left;
 }
 
 .header-top-mid{
     /* padding-left: 24px; */
-    width: 336px;
+    width: 396px;
     background: violet;
     float: left;
     height: 20px;
@@ -50,8 +52,35 @@
     width: 275px;
 }
 
-.header-top-mid>button{
-    width: 53px;
+.submit{
+    /* width: px; */
+    overflow: hidden;
+    float: right;
+    background: yellow;
+}
+
+/* .submit-text{
+    background: red;
+    font-size: 7pt;
+    padding-left: 8px;
+    font-family: Myriad Pro;
+    /* float: left;
+} */
+
+.submit-wrap{
+    height: 20px;
+    float: right;
+    display: inline;
+    background: pink;
+}
+.submit-wrap>img{
+    float: right;
+}
+.span-text{
+    height: 18px;
+    background: #274e55;
+    padding-bottom: 2px;
+    float: right;
 }
 
 .header-top-right{
@@ -100,17 +129,16 @@
     float: right;
     width: 142px;
     margin-left: 18px;
-    background: darkgreen;
 }
 
 .body-left{
     float: left;
     width: 194px;
-    background: purple;
+    background: #f5f5f5;
 }
 
 .main-side-title{
-    background: lightblue;
+    background: #2fc1da;
     width: 100%;
     left: 12px;
     padding-top: 15px;
@@ -125,9 +153,13 @@
     padding-top: 12px;
     padding-bottom: 10px;
 }
+
+.main-side-content-right.active{
+    background-color: #ffffff;
+}
 .main-side-list{
     padding-left: 11px;
-    width: 145 px;
+    width: 100 px;
     overflow: hidden;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -142,18 +174,20 @@
     height: 12px;
     width: 12px;
     margin-right: 11px;
-    background: red;
     float: right;
 }
-
+.list-text{
+    width: 130px;
+    background: red;
+}
 .main-left{
-    background: seashell;
+    /* background: seashell; */
 }
 
 .body-mid{
     float: left;
     width: 518px;
-    background: yellow;
+    background: white;
     padding: 0px 24px 0px 26px;
 }
 
@@ -165,28 +199,48 @@
 .main-division-left{
     width: 258px;
     float: left;
-    background: palevioletred;
+    background: #f5f5f5;
     overflow: hidden;
+}
+
+.main-division-left>img{
+    float: left;
 }
 
 .main-division-right{
     width: 258px;
     float: right;
-    background: powderblue;
     overflow: hidden;
+    background: #f5f5f5;
 }
+
+.main-division-right>img{
+    float: right;
+}
+
 
 .main-division-top{
-    width: 100px;
-    margin: 0 auto;
-    padding: 14px 0px 13px 0px;
-    background: chartreuse;
+    padding-top: 14px;
+    width: 230px;
+    text-align: center;
 }
 
+.main-division-left>.main-division-top{
+    margin-left: 13px;
+    /* padding: 14px 0px 13px 0px; */
+}
+
+.main-division-right>.main-division-top{
+    margin-left: 13px;
+    float: left;
+    /* padding: 13px 0px 13px 0px; */
+}
+.main-division-right>img{
+    float: right;
+}
 .main-division-bottom{
     width: 248px;
     margin: 0 auto;
-    background: cornsilk;
     padding-left: 5px;
     padding-right: 5px;
     overflow: hidden;
@@ -194,23 +248,42 @@
 
 .content-type{
     width: 114px;
+    height: 28px;
     margin-left: 5px;
     margin-right: 5px;
-    padding: 5px 0px 8px 0px;
+    /* padding: 5px 0px 8px 0px; */
     float: left;
-    background: darkkhaki;
+    background: #dddddd;
 }
+
+.content-type.active{
+    background: #2fc1da;
+}
+
+.content-type>img{
+    float: left;
+}
+
+.content-text{
+    width: 86px;
+    float: left;
+    text-align: center;
+    height: 28px;
+    font-size: 13px;
+    padding-top: 11px;
+}
+
 .main-content{
     width: 100%;
-    background: red;
     overflow: hidden;
 }
 
 .main-list{
-    background: peru;
     margin-top: 15px;
     padding-bottom: 15px;
     overflow: hidden;
+    border-color: #d8d8d8;
+    border-bottom: 1px;
 }
 
 .list-img{
@@ -224,7 +297,6 @@
     padding: 0px 9px;
     width: 430px;
     float: left;
-    background: darkslategrey;
 }
 
 .list-item-title{
@@ -232,24 +304,18 @@
     float: left;
     margin-left: 1px;
     width: 427px;
-    background: yellow;
 }
 
 .list-item-details{
     width: 100%;
     float: left;
-    background: yellowgreen;
 }
 
 .body-right{
     float: right;
     width: 176px;
-    background: yellowgreen;
 }
 
-.main-right{
-     background: rosybrown;
-}
 
 
 .footer-left{
