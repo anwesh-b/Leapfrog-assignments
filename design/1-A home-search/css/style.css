@@ -2,8 +2,33 @@
     font-size: 9px;
 }
 
+.submit a{
+    color: white;
+}
+
+.submit a:hover{
+    color: #d5d5d5;
+}
+
+.span-text{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.header-top-right-top{
+    font-size: 15px;
+}
+
+.header-top-right-bottom{
+    font-size: 11px;
+}
+
 .header-top-right-bottom>ul li{
     display: inline;
+}
+
+.header-bottom-right>ul li{
+    font-size: 14px;
 }
 
 .header-bottom-right-details a{
@@ -14,9 +39,25 @@
     color: black;
 }
 
+.header-bottom-right-details:hover a,.header-bottom-right-details.active:hover a{
+    color: #2fc1da;
+}
+
 .main-side-title{
     color: #ffffff;
     font-size: 17px;
+}
+
+.main-division{
+    border-bottom: 2px solid #30c2db;
+}
+
+.main-division-top{
+    font-size: 13px;
+}
+
+.content-type{
+    background-color: #dfdfdf;
 }
 
 .main-content{
@@ -33,13 +74,16 @@
     font-weight: bold;
 }
 
+.main-list{
+    border-bottom: 1px solid #d8d8d8;
+}
 
 .list-item-title a{
     color: #000000;
 }
 
-.main-list{
-    border-bottom: 1px solid #d8d8d8;
+.list-item-details.imp{
+    color: #d43f1e;
 }
 
 .subscription{
@@ -47,16 +91,13 @@
     font-weight: bold;
 }
 
-.submit a{
-    color: white;
+.main-side-content-right.active{
+    background-color: #ffffff;
 }
 
-.submit a:hover{
+.footer-wrapper{
+    font-size: 9px;
     color: #d5d5d5;
-}
-
-.list-item-details.imp{
-    color: #d43f1e;
 }
 
 .footer-left a{
@@ -65,8 +106,4 @@
 
 .footer-left a:hover{
     text-decoration: underline;
-}
-
-.footer-wrapper{
-    font-size: 9px;
 }

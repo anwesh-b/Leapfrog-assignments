@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: "Myriad Pro";
+    font-family:  "muli", "Myriad Pro";
     font-size: 12px;
 }
 
@@ -28,4 +28,8 @@ h1{
 
 h4{
     font-size: 14px;
+}
+
+ul>img{
+    padding-bottom: 3px;
 }
