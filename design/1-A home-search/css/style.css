@@ -33,6 +33,11 @@
     font-weight: bold;
 }
 
+
+.list-item-title a{
+    color: #000000;
+}
+
 .main-list{
     border-bottom: 1px solid #d8d8d8;
 }
