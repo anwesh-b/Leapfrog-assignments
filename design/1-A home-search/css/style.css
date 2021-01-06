@@ -1,5 +1,27 @@
+.header-top-mid>input{
+    font-size: 9px;
+}
+
+.header-top-right-bottom>ul li{
+    display: inline;
+}
+
+.header-bottom-right-details a{
+    color: #ababab;
+}
+
+.header-bottom-right-details.active a{
+    color: black;
+}
+
+.main-side-title{
+    color: #ffffff;
+    font-size: 17px;
+}
+
 .main-content{
     color: #898989;
+    font-size: 11PX;
 }   
 
 .main-content h4{
@@ -8,10 +30,16 @@
 
 .main-content a{
     color: #59b4c6;
+    font-weight: bold;
+}
+
+.main-list{
+    border-bottom: 1px solid #d8d8d8;
 }
 
 .subscription{
     color: #6e931f;
+    font-weight: bold;
 }
 
 .submit a{
@@ -32,4 +60,8 @@
 
 .footer-left a:hover{
     text-decoration: underline;
+}
+
+.footer-wrapper{
+    font-size: 9px;
 }
