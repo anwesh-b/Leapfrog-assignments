@@ -11,3 +11,7 @@ a{
 a:hover{
     color: #aaaaaa;
 }
+
+input:active{
+    border: none;
+}
