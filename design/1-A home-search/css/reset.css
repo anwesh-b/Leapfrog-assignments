@@ -1,11 +1,13 @@
 *{
     padding: 0px;
     margin: 0px;
+    /* overflow:visible; */
 }
 
 body{
     font-family:  "muli", "Myriad Pro";
     font-size: 12px;
+    overflow: visible;
 }
 
 a{
