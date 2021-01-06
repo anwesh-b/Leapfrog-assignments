@@ -34,16 +34,29 @@
     margin: 20px 24px 9px 24px;
 }
 
-.header-top-mid>img{
+.header-top-mid img{
     float: left;
 }
 
-.header-top-mid>input{
-    width: 261px;
-    height: 20px;
+
+.inp1,.inp2{
+    padding: 4px;
+}
+
+.inside-inp{
+    width: 276px;
     float: left;
+    height: 20px;
+    overflow: hidden;
     background: #caeff7;
+}
+
+.header-top-mid input{
+    width: 223px;
+    float: left;
+    padding-top: 3px;
     border: none;
+    background: #caeff7;
     outline: none;
 }
 
