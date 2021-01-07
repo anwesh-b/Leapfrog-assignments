@@ -33,11 +33,6 @@
     /* display: none; */
 }
 
-.header-top-left{
-    width: 23.773987207%;
-    float: left;
-}
-
 .header-top-left a{
     width: 100%;
     overflow: hidden;
@@ -167,6 +162,7 @@
 }
 
 .body-wrapper{
+    margin-top: 10px;
     background: white;
     overflow: hidden;
 }
@@ -176,9 +172,9 @@
 }
 
 .body-left{
-    display: none;
+    display: block;
     float: left;
-    width: 20.682302772%;
+    width: 100%;
 }
 
 .main-side-title{
@@ -198,6 +194,11 @@
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: hidden;
+    display: none;
+}
+
+.body-left:hover .main-side-list{
+    display: block;
 }
 
 .main-side-list:hover{
@@ -210,15 +211,20 @@
     float: left;
 }
 
+.main-side-title.main-side-content-title.titlebottom{
+    display: none;
+}
+
 .main-side-content-img{
     margin-right: 11px;
     float: right;
 }
 
 .body-mid{
-    float: left;
+    float: right;
     width: 100%;
     background: white;
+    position: relative;
     /* padding: 0px px 0px 26px; */
 }
 
@@ -285,33 +291,12 @@
 
 
 .content-type{
-    width: 100%;
-    margin: 0px 5px;
+    width: 50%;
     float: left;
     background: #dddddd;
 }
 
 .content-type.active{
-    background: #2fc1da;
-}
-
-.content-type.active .div-left, .content-type:hover .div-left{
-    background: url(../image/acontent-left.jpg) no-repeat top left;
-}
-
-.content-type.active .div-right, .content-type:hover .div-right{
-    background: url(../image/acontent-right.jpg) no-repeat top right;
-}
-
-.content-type .div-left{
-    background: url(../image/contenttype-left.jpg) no-repeat top left;
-}
-
-.content-type .div-right{
-    background: url(../image/contenttype-right.jpg) no-repeat top right;
-}
-
-.content-type:hover{
     background: #2fc1da;
 }
 
@@ -333,10 +318,16 @@
 }
 
 .list-img{
-    width: 70px;
+    width: 15%;
+    max-width: 70px;
     float: left;
     overflow: hidden;
 }
+
+.list-img img{
+    width: 100%;
+}
+
 
 .list-details{
     margin-left: 9px;
@@ -357,15 +348,20 @@
 }
 
 .body-right{
-    float: right;
-    width: 18.763326226%;
+    float: left;
+    width: 100%;
     overflow: hidden;
-    display: none;
+    display: block;
+}
+
+.body-right:hover .main-side-content-right{
+    display: block;
 }
 
 .main-side-content-right{
     padding-top: 12px;
     padding-bottom: 10px;
+    display: none;
 }
 
 .main-side-content-right:hover{
@@ -569,6 +565,10 @@
         width: 20.682302772%;
     }
     
+    .main-side-list{
+        display: block;
+    }
+
     .main-side-title{
         background: #2fc1da;
         width: 100%;
@@ -582,7 +582,9 @@
         padding-right: 14px;
     }
 
-    
+    .main-side-content-right{
+        display: none;
+    }
     
     .main-side-list{
         padding-top: 10px;
@@ -599,16 +601,28 @@
         width: 77.319587629%;
         float: left;
     }
+
+    .main-side-title.main-side-content-title.titlebottom{
+        display: block;
+    }
+    
     
     .main-side-content-img{
         margin-right: 11px;
         float: right;
     }
-    
+
+
+    .body-wrapper .content{
+        position: relative;
+    }
     .body-mid{
         float: right;
         width: 75.9823493%;
         background: white;
+        /* position: absolute; */
+        top: 0px;
+        right: 0px;
         padding-left: 24px;    /* padding: 0px 24px 0px 26px; */
     }
     
@@ -740,6 +754,7 @@
         display: block;
         float: left;
         width: 20.682302772%;
+        clear: both;
         /* overflow: hidden; */
     }
     
@@ -747,6 +762,7 @@
     .main-side-content-right{
         padding-top: 12px;
         padding-bottom: 10px;
+        display: block;
     }
     
     .main-side-content-right:hover{
@@ -1110,7 +1126,8 @@
     }
     
     .body-right{
-        float: left;
+        clear: none;
+        float: right;
         width: 176px;
         overflow: hidden;
     }
