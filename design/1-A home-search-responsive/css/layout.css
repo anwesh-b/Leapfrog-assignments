@@ -185,7 +185,6 @@
 .body-mid{
     float: right;
     width: 100%;
-    background: white;
     position: relative;
     /* padding: 0px px 0px 26px; */
 }
@@ -198,7 +197,6 @@
 .main-division-left{
     width: 49.806949807%;
     float: left;
-    background: #f5f5f5;
     overflow: hidden;
 }
 
@@ -218,7 +216,6 @@
     width: 49.806949807%;
     float: right;
     overflow: hidden;
-    background: #f5f5f5;
 }
 
 .main-division-right img{
@@ -252,15 +249,6 @@
 .content-type{
     width: 50%;
     float: left;
-    background: #dddddd;
-}
-
-.content-type.active{
-    background: #2fc1da;
-}
-
-.content-type:hover {
-    background: #2fc1da;
 }
 
 .content-type a{
@@ -268,24 +256,6 @@
     padding: 7px 0;
     text-align: center;
 }
-
-
-.content-type.active .div-left, .content-type:hover .div-left{
-    background: url(../image/acontent-left.jpg) no-repeat top left;
-}
-
-.content-type.active .div-right, .content-type:hover .div-right{
-    background: url(../image/acontent-right.jpg) no-repeat top right;
-}
-
-.content-type .div-left{
-    background: url(../image/contenttype-left.jpg) no-repeat top left;
-}
-
-.content-type .div-right{
-    background: url(../image/contenttype-right.jpg) no-repeat top right;
-}
-
 
 .main-content{
     width: 100%;
@@ -344,12 +314,7 @@
     display: none;
 }
 
-.main-side-content-right:hover{
-    background: white;
-}
-
 .footer-wrapper{
-    background: #727272;
     text-align: center;
     padding: 15px 0;
 }
@@ -396,7 +361,6 @@
         float: left;
         height: 20px;
         overflow: hidden;
-        background: #caeff7;
     }
     
     .header-top-mid input{
@@ -404,7 +368,6 @@
         float: left;
         padding-top: 3px;
         border: none;
-        background: #caeff7;
         outline: none;
     }
     
@@ -422,14 +385,6 @@
     }
 
     .submit-wrap>img{
-        float: right;
-    }
-    
-    .span-text{
-        height: 18px;
-        background: #274e55;
-        padding-bottom: 2px;
-        padding-top: 3px;
         float: right;
     }
     
@@ -523,10 +478,6 @@
     .content-type{
         width: 45.967741935%;
         margin: 0px 5px;
-    }
-    
-    .content-type:hover{
-        background: #2fc1da;
     }
     
     .content-type a{
@@ -638,16 +589,7 @@
     
     .main-side-list{
         width: 194px;
-    }
-
-    .body-mid{
-        float: left;
-        position: relative;
-        max-width: 518px;
-        width: 55.223880597%;
-        background: white;
-        padding: 0px 24px 0px 26px;
-    }
+    }    
     
     .main-division-left{
         width: 258px;

@@ -86,6 +86,10 @@
     background: white;
 }
 
+.body-mid{
+    background: white;
+}
+
 .main-division{
     border-bottom: 2px solid #30c2db;
 }
@@ -94,8 +98,36 @@
     font-size: 13px;
 }
 
+.main-division-left,.main-division-right{
+    background: #f5f5f5;
+}
+
 .content-type{
-    background-color: #dfdfdf;
+    background: #dddddd;
+}
+
+.content-type.active,.content-type:hover{
+    background: #2fc1da;
+}
+
+.content-type.active .div-left, .content-type:hover .div-left{
+    background: url(../image/acontent-left.jpg) no-repeat top left;
+}
+
+.content-type.active .div-right, .content-type:hover .div-right{
+    background: url(../image/acontent-right.jpg) no-repeat top right;
+}
+
+.content-type .div-left{
+    background: url(../image/contenttype-left.jpg) no-repeat top left;
+}
+
+.content-type .div-right{
+    background: url(../image/contenttype-right.jpg) no-repeat top right;
+}
+
+.main-side-content-right:hover{
+    background: white;
 }
 
 .main-content{
@@ -135,6 +167,7 @@
 
 .footer-wrapper{
     font-size: 9px;
+    background: #727272;
     color: #d5d5d5;
 }
 
@@ -151,4 +184,27 @@
         font-size: 12px; 
     }
 
+    .inside-inp{
+        background: #caeff7;
+    }
+
+    .header-top-mid input{
+        background: #caeff7;
+    }
+
+    .span-text{
+        background: #274e55;
+    }
+
+    .content-type:hover{
+        background: #2fc1da;
+    }
 }
+
+@media only screen and (min-width: 1002px){
+    .body-mid{
+        background: white;
+    }
+}
+
+
