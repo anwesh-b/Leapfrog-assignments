@@ -11,7 +11,7 @@
 .content{
     width: 938px;
     margin: 0 auto;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .header-wrapper{  
@@ -153,14 +153,13 @@
     overflow: hidden;
 }
 
-.body-wrapper .content-wrap .content{
+.whole-wrapper .body-wrapper .content-wrap .content{
     background: #f5f5f5;
 }
 
 .body-left{
     float: left;
     width: 194px;
-    background: #f5f5f5;
 }
 
 .main-side-title{
