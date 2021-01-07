@@ -300,11 +300,33 @@
     background: #2fc1da;
 }
 
+.content-type:hover {
+    background: #2fc1da;
+}
+
 .content-type a{
     display: block;
     padding: 7px 0;
     text-align: center;
 }
+
+
+.content-type.active .div-left, .content-type:hover .div-left{
+    background: url(../image/acontent-left.jpg) no-repeat top left;
+}
+
+.content-type.active .div-right, .content-type:hover .div-right{
+    background: url(../image/acontent-right.jpg) no-repeat top right;
+}
+
+.content-type .div-left{
+    background: url(../image/contenttype-left.jpg) no-repeat top left;
+}
+
+.content-type .div-right{
+    background: url(../image/contenttype-right.jpg) no-repeat top right;
+}
+
 
 .main-content{
     width: 100%;
@@ -616,16 +638,21 @@
     .body-wrapper .content{
         position: relative;
     }
+
     .body-mid{
         float: right;
         width: 75.9823493%;
         background: white;
-        /* position: absolute; */
+        position: absolute;
         top: 0px;
         right: 0px;
         padding-left: 24px;    /* padding: 0px 24px 0px 26px; */
     }
     
+    .content>.body-mid{
+        vertical-align: top;
+    }
+
     .main-division{
         overflow: hidden;
         width: 100%;
@@ -995,8 +1022,15 @@
         float: right;
     }
     
+    
+
+    .body-wrapper .content{
+        position: relative;
+    }
+
     .body-mid{
         float: left;
+        position: relative;
         max-width: 518px;
         width: 55.223880597%;
         background: white;
