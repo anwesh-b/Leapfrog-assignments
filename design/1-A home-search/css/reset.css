@@ -1,13 +1,14 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     /* overflow:visible; */
+    /* width: 100%; */
 }
 
 body{
     font-family:  "muli", "Myriad Pro";
     font-size: 12px;
-    overflow: visible;
+    /* overflow: visible; */
 }
 
 a{

@@ -1,18 +1,22 @@
+.whole-wrapper{
+    min-width: 1002px;
+    overflow: hidden;
+}
+
 .content-wrap{
     width: 1002px;
-    /* padding-left: 33px; */
     margin: 0 auto;
-    /* overflow: hidden; */
 }
 
 .content{
     width: 938px;
     margin: 0 auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .header-wrapper{  
     overflow: hidden;
+    width: 100%;
 }
 
 .header-top{
@@ -323,8 +327,9 @@
 }
 
 .body-right{
-    float: right;
+    float: left;
     width: 176px;
+    overflow: hidden;
 }
 
 .main-side-content-right{
