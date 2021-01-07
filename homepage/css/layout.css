@@ -1,0 +1,28 @@
+body{
+    width: 25em;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.details{
+    margin: 15px 0 10px 0;
+}
+
+table{
+    width: 100%;
+    max-width: 541px;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding: 5px 9px;
+}
+
+@media only screen and (min-width: 600px){
+    body{
+        width: 35em;
+    }
+    th,td{
+        padding: 9px;
+    }
+}
