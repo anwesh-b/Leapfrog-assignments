@@ -347,7 +347,11 @@
 
 .footer-left>ul li{
     display: inline;
-    padding: 8px;
+    padding: 8px 0 8px 8px;
+}
+
+.footer-button{
+    margin: 0 0 1px 8px;
 }
 
 .footer-right{
