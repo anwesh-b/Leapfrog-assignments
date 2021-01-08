@@ -1,0 +1,257 @@
+.main-wrapper{
+    width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.sec1{
+    background: url("../images/S1-bg.jpg");
+    background-repeat:repeat-x;
+}
+
+.sec1-head{
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.sec1-h-l{
+    width: 264px;
+    float: left;
+}
+
+.sec1-h-r{
+    width: 479px;
+    float: right;
+    overflow: hidden;
+}
+
+.phone{
+    float: right;
+    width: 328px;
+    text-align: right;
+}
+
+.nav{
+    width: 479px;
+    float: right;
+    text-align: right;
+}
+
+.sec1-bottom{
+    overflow: hidden;    /* width: 1327px; */
+}
+
+.sec1-b-l{
+    width: 532px;
+    float: left;
+}
+
+.topic-top{
+    width: 404px;
+}
+
+.topic{
+    width: 528px;
+}
+
+.topic-bottom{
+    width: 195px;
+}
+
+.sec1-b-r{
+    width: 772px;
+    float: right;
+}
+
+.sec1-br-img{
+    width: 772px;
+    height: 638px;
+    background: url(../images/sec1-burger.png);
+    /* background-attachment: fixed; */
+    overflow: hidden;
+    background-size:cover;
+}
+
+
+.sec1-br-text{
+    width: 100px;
+}
+
+.header-wrap{
+    width: 1327px;
+}
+
+.sec2{
+    background: green;
+}
+
+.sec2-wrap{
+    width: 1234px; 
+    margin: 0 auto;
+    margin-top: 72px;
+}
+
+.sec2-l{
+    width: 596px;
+    height: 420px;
+    background: url("../images/sec2-burger1.png");
+    float: left;
+
+}
+
+.sec2-r{
+    float: right;
+    height: 420px;
+    width: 596px;
+    position: relative;
+}
+
+.sec2-rt,.sec2-rb{
+    height: 192px;
+    width: 596px;
+}
+
+.sec2-rt{
+    background: url("../images/sec2-burger2.png");
+}
+
+.sec2-rb{
+    position: absolute;
+    bottom: 0;
+    background: url("../images/sec2-burger3.png");
+}
+
+.sec3{
+    background: red;
+    /* overflow: hidden; */
+}
+
+.sec3-wrap{
+    margin-top: 67px;
+}
+
+.sec3-top{
+    margin: 0 auto;
+    width: 218px;
+    height: 48px;
+    text-align: center;
+}
+
+.sec3-mid{
+    width: 1055px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sec3-bottom{
+    width: 1333px;
+    margin: 0 auto;                  
+}
+
+.sec3-bcontent{
+    width: 332px;
+    float: left;
+    text-align: center;
+}
+
+.order{
+    width: 195px;
+    height: 57px;
+    margin: 0 auto;
+    background-color: #bf2222;
+    text-align: center;
+}
+
+.sec4{
+    background: green;
+}
+
+.sec4-wrapper{
+    width:1294px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.sec4-wrapper2{
+    width: 1216px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.sec4-text{
+    float: left;
+    width: 40%;
+}
+
+.sec4-r{
+    width: 659px;
+    float: right;
+}
+
+.sec5{
+    background: red;
+}
+
+.sec5-left{
+    float: left;
+    width: 351px;
+}
+
+.sec5-mid{
+    width: 784px;
+    float: left;
+    text-align: center;
+}
+
+.booking{ 
+    float: left;
+    height: 65px;
+    width: 379px;
+}
+
+.sec5-right{
+    float: right;
+    width: 305px;
+}
+
+.sec6{
+    background: green;
+}
+
+.sec6-wrap{
+    width: 1326px;
+    height: 525px;
+    margin: 0 auto;
+    background: url("../images/sec6.jpg");
+}
+.sec6-top{
+    overflow: hidden;
+}
+
+.sec6-tl{
+    float: left;
+    width: 512px;
+}
+
+.sec6-tr{
+    float: right;
+    width: 297px;
+}
+
+.det-address{
+    width: 297px;
+}
+
+.sec6-bot{
+    overflow: hidden;
+}
+
+.sec6-bl{
+    width: 241px;
+    float: left;
+}
+
+.sec6-br{
+    width: 152px;
+    float: right;
+}
