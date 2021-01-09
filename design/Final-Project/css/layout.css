@@ -7,6 +7,7 @@
 .sec1{
     background: url("../images/S1-bg.jpg");
     background-repeat:repeat-x;
+    padding-top: 53px;
 }
 
 .sec1-head{
@@ -92,34 +93,45 @@
 }
 
 .sec2-l{
-    width: 596px;
-    height: 420px;
+    width: 572px;
+    height: 389px;
     background: url("../images/sec2-burger1.png");
     float: left;
-
+    padding: 31px 0 0 24px;
 }
 
 .sec2-r{
     float: right;
     height: 420px;
     width: 596px;
+    padding-left: 29px;
     position: relative;
 }
 
+.sec2-r h4,.sec2-r h2{
+    width: 188px;
+}
+
 .sec2-rt,.sec2-rb{
-    height: 192px;
-    width: 596px;
+    height: 161px;
+    width: 567px;
 }
 
 .sec2-rt{
     background: url("../images/sec2-burger2.png");
+    position: absolute;
+    padding: 31px 0 0 29px;
+    top: 0;
 }
 
 .sec2-rb{
     position: absolute;
+    padding: 31px 0 0 29px;
     bottom: 0;
     background: url("../images/sec2-burger3.png");
 }
+
+
 
 .sec3{
     background: red;
@@ -128,18 +140,23 @@
 
 .sec3-wrap{
     margin-top: 67px;
+    margin-bottom: 135px;
+    overflow: hidden;
 }
 
 .sec3-top{
     margin: 0 auto;
+    padding-top: 11px;
     width: 218px;
-    height: 48px;
+    height: 37px;
     text-align: center;
 }
+
 
 .sec3-mid{
     width: 1055px;
     margin: 0 auto;
+    padding-top: 35px;
     text-align: center;
 }
 
@@ -149,14 +166,25 @@
 }
 
 .sec3-bcontent{
+    margin-top: 64px;
     width: 332px;
     float: left;
     text-align: center;
 }
 
+.sec3-img{
+    height: 370px;
+    overflow: hidden;
+}
+
+.desc{
+    margin-top: 15px;
+}
+
 .order{
     width: 195px;
-    height: 57px;
+    height: 38px;
+    padding-top: 19px;
     margin: 0 auto;
     background-color: #bf2222;
     text-align: center;
@@ -167,20 +195,24 @@
 }
 
 .sec4-wrapper{
-    width:1294px;
+    width:1215px;
     margin: 0 auto;
     overflow: hidden;
+    padding: 25px 26px 27px 53px;
+    background-color: pink;
 }
 
 .sec4-wrapper2{
-    width: 1216px;
+    width: 1215px;
+    height: 440px;
     overflow: hidden;
-    margin: 0 auto;
+    background-color: blue;
 }
 
 .sec4-text{
     float: left;
     width: 40%;
+    margin-top: 38px;
 }
 
 .sec4-r{
@@ -198,15 +230,23 @@
 }
 
 .sec5-mid{
-    width: 784px;
+    width: 810px;
     float: left;
     text-align: center;
 }
 
 .booking{ 
     float: left;
+    text-align: left;
     height: 65px;
-    width: 379px;
+    width: 377px;
+    margin: 13px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.submit{
+    text-align: center;
 }
 
 .sec5-right{
@@ -216,11 +256,13 @@
 
 .sec6{
     background: green;
+    margin-bottom: 66px;
 }
 
 .sec6-wrap{
-    width: 1326px;
+    width: 1242px;
     height: 525px;
+    padding: 0 41px 0 43px;
     margin: 0 auto;
     background: url("../images/sec6.jpg");
 }
