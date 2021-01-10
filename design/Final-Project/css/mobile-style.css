@@ -1,0 +1,142 @@
+.sec2 a,.order,.submit,.sec6{
+    color: #ffffff;
+}
+
+
+.nav,.sec1-br-text,.sec2,.sec3-top,.title,h4,.sec6-tr{
+    font-family: 'BebasNeueBold';
+}
+
+.topic-top, .booking input,.sec6-bl{
+    font-family: 'BebasNeueRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.phone, .desc, .sec3-mid,.sec4, .sec6-tl p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.topic, .topic-bottom, .sec3-mid h2,.order, .sec4-text h1, .sec5-mid h2, .submit{
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.sec1-bottom,.sec2{
+    text-transform: uppercase;
+}
+
+
+
+.nav{
+    font-size: 20.83px;
+    letter-spacing: 4px;
+}
+
+.phone{
+    font-size: 16.67px;
+}
+
+
+
+.topic-top{
+    font-size: 23.65px;
+    color: #3d2514;
+}
+
+.topic{
+    font-size: 114.3px;
+}
+
+.topic-bottom{
+    font-size: 56.49px;
+}
+
+.sec2-l:hover,.sec2r:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    /* opacity: 0.5; */
+    color: #ffffff;
+}
+
+.sec2 h4{
+    font-size: 25px;
+}
+
+.sec2 h2{
+    font-size: 41.67px;
+}
+
+.sec2 .sec2-r h4{
+    font-size: 20px;
+}
+
+.sec2 .sec2-r h2{
+    font-size: 35.67px;
+}
+
+.sec3{
+    color: #3d2514;
+}
+
+.sec3-top{
+    background-color: #ffc045;
+    font-size: 25px;
+}
+
+.sec3-mid{
+    font-size: 14.67px;
+}
+
+.sec3-mid h2{
+    font-size: 30px;
+}
+
+.sec3-bcontent{
+    font-size: 16.67px;
+}
+
+.title{
+    font-size: 37.5px;
+}
+
+.order{
+    text-transform: uppercase;
+}
+
+.sec4{
+    color: #ffffff;
+}
+
+.sec4-text{
+    font-size: 14.83px;
+    text-transform: uppercase;
+}
+
+.sec4-text h4{
+    text-transform: uppercase;
+    font-size: 20.17px;
+}
+
+.sec4-text h1{
+    font-size: 25.67px;
+}
+
+.sec5{
+    color: #3d2514;
+}
+
+.sec5-mid h4{
+    font-size: 29.17px;
+}
+
+.sec5-mid h2{
+    font-size: 35px;
+}
+
+.booking,.booking input{
+    font-size: 20.83px;
+}
+
+.sec6{
+    font-size: 16.67px;
+}
+
