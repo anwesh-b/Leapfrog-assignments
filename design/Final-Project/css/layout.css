@@ -6,12 +6,13 @@
 
 .sec1-mainwrapper{
     min-width: 400px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .sec1-wrapper{
     padding: 0 1.888888%;
-    width: 92.1527778%;
+    width: 96.222224%;
 }
 
 .sec1-head{
@@ -24,15 +25,19 @@
     float: left;
 }
 
+.sec1-h-l a,.sec1-h-l a img{
+    width: 100%;
+}
+
 .sec1-h-r{
-    width: 74.864356%;
+    width: 80%;
     max-width: 529px;
     float: right;
 }
 
 .phone{
     float: right;
-    width: 62.003781%;
+    width: 80%;
     max-width: 328px;
     text-align: right;
 }
@@ -67,14 +72,14 @@
     /* float: left; */
     position: absolute;
     z-index: 1;
-    bottom: 185px;
+    top:135px;
 }
 
 .topic-top{
-    width: 400px;
+    width: 250px;
     border: 2px dashed #3d2514;
     text-align: center;
-    padding: 1.691729% 0 0.939849% 0 ;
+    padding: 0.8458645% 0 0.4699245% 0 ;
 }
 
 .topic{
@@ -88,18 +93,21 @@
 }
 
 .sec1-b-r{
-    /* width: 8.396369%; 
-    /* float: right; */
-
+    max-width: 646px;
+    width: 100%;
 }
 
+
 .sec1-br-img{
-    width: 772px;
-    height: 638px;
+    width: 100%;
+    max-width: 772px;
+    min-height: 488px;
+    max-height: 568px;
     background: url(../images/sec1-burger.png) 0 90%;
     /* background-attachment: fixed; */
+    background-repeat: no-repeat;
     overflow: hidden;
-    background-size:cover;
+    background-size:100%;
     position: relative;
     color: white;
 }
@@ -107,26 +115,28 @@
 
 .sec1-br-text{
     position: absolute;
-    left: 7.772020%;
+    left: 15.54404%;
     bottom: 9.404388%;
-    width: 22.538860%;
-    height: 22.257053%;
+    width: 87px;
+    height: 87px;
     background: url("../images/price.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     text-align: center;
-    padding-top: 4.145077%;
-    border-radius: 50%;
+    padding-top: 2.7725385%;
+    border-radius:30%;
 }
 
 .pricetop{
-    font-size: 30.37px;
+    font-size: 15.185px;
 }
 
 .pricetop span{
-    font-size: 69.84px;
+    font-size: 34.92px;
 }
 
 .pricebelow{
-    font-size: 33.4px;
+    font-size: 16.7px;
 }
 
 .header-wrap{
@@ -439,7 +449,7 @@
 }
 
 .sec6-wrapper{
-    min-width: 400px;
+    min-width: 23.9952em;
     overflow: hidden;
     padding-bottom: 33px;
     margin: 0 auto;
@@ -528,6 +538,7 @@
     .sec1-wrapper{
         padding: 0 1.888888%;
         width: 92.1527778%;
+        overflow: hidden;
     }
     
     .sec1-head{
@@ -539,6 +550,8 @@
         max-width: 264px;
         float: left;
     }
+
+    
     
     .sec1-h-r{
         width: 74.864356%;
@@ -573,6 +586,8 @@
         padding-left: 0.376789%;
         width: 99.623210%;
         max-width: 1322px;
+        height: 638px;
+        width: 756px;
         overflow: hidden;    /* width: 1327px; */
     }
     
@@ -580,7 +595,6 @@
         margin-top: 11.270802%;
         /* width: 40.242057%; */
         max-width: 532px;
-        /* float: left; */
         position: absolute;
         z-index: 1;
         top: 85px;
@@ -604,33 +618,35 @@
     }
     
     .sec1-b-r{
-        /* width: 8.396369%; 
-        /* float: right; */
-    
+        width: 772px;
+        float: right;
+        max-width: 772px;
     }
     
     .sec1-br-img{
         width: 772px;
         height: 638px;
+        max-height: 638px;
         background: url(../images/sec1-burger.png) 0 90%;
         /* background-attachment: fixed; */
         overflow: hidden;
         background-size:cover;
         position: relative;
+        float: right;
         color: white;
     }
     
     
     .sec1-br-text{
         position: absolute;
-        left: 7.772020%;
-        bottom: 9.404388%;
-        width: 22.538860%;
-        height: 22.257053%;
+        left: 60px;
+        bottom: 60px;
+        width: 174px;
+        height: 142px;
         background: url("../images/price.png");
         text-align: center;
-        padding-top: 4.145077%;
-        border-radius: 50%;
+        padding-top: 32px;
+        border-radius: 87px;
     }
     
     .pricetop{
@@ -1020,6 +1036,12 @@
     .submit:hover{
         background-color: #8c1a1a;
     }
+    .booking.submit{
+        border: none;
+        height: 45px;
+        text-align: center;
+        background-color: #bf2222;
+    }
     
     .sec5-right{
         float: right;
@@ -1152,6 +1174,7 @@
     }
     
     .sec1-bottom{
+        width: 100%;
         padding-left: 5px;
         overflow: hidden;    /* width: 1327px; */
     }
@@ -1180,8 +1203,8 @@
     }
     
     .sec1-b-r{
-        width: 772px;
-        float: right;
+        /* width: 772px; */
+        /* float: left; */
     }
     
     .sec1-br-img{
@@ -1637,6 +1660,7 @@
     }
     
     .sec1-bottom{
+        /* width: 60%; */
         padding-left: 5px;
         overflow: hidden;    /* width: 1327px; */
     }

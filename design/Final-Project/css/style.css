@@ -27,28 +27,31 @@
 
 
 
+
 .nav{
-    font-size: 20.83px;
-    letter-spacing: 4px;
+    font-size: 14.83px;
+    letter-spacing: 2px;
 }
 
 .phone{
-    font-size: 16.67px;
+    font-size: 11.67px;
 }
 
-
+.sec1-b-l{
+    color: #3d2514;
+}
 
 .topic-top{
-    font-size: 23.65px;
+    font-size: 15.65px;
     color: #3d2514;
 }
 
 .topic{
-    font-size: 114.3px;
+    font-size: 64.3px;
 }
 
 .topic-bottom{
-    font-size: 56.49px;
+    font-size: 30.49px;
 }
 
 .sec2-l:hover,.sec2r:hover{
@@ -142,6 +145,31 @@
 
 
 @media only screen and (min-width: 768px){
+    
+.nav{
+    font-size: 20.83px;
+    letter-spacing: 4px;
+}
+
+.phone{
+    font-size: 16.67px;
+}
+
+
+
+.topic-top{
+    font-size: 23.65px;
+    color: #3d2514;
+}
+
+.topic{
+    font-size: 114.3px;
+}
+
+.topic-bottom{
+    font-size: 56.49px;
+}
+
     .sec5{
         color: #3d2514;
     }
