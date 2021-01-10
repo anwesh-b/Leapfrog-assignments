@@ -7,10 +7,10 @@
     font-family: 'BebasNeueBold';
 }
 
-.topic-top, .booking,.sec6-bl{
+.topic-top, .booking input,.sec6-bl{
     font-family: 'BebasNeueRegular';
     font-weight: normal;
-   font-style: normal;
+    font-style: normal;
 }
 
 .phone, .desc, .sec3-mid,.sec4, .sec6-tl p{
@@ -19,6 +19,42 @@
 
 .topic, .topic-bottom, .sec3-mid h2,.order, .sec4-text h1, .sec5-mid h2, .submit{
     font-family: 'Alfa Slab One', cursive;
+}
+
+.sec1-bottom,.sec2{
+    text-transform: uppercase;
+}
+
+
+
+.nav{
+    font-size: 20.83px;
+    letter-spacing: 4px;
+}
+
+.phone{
+    font-size: 16.67px;
+}
+
+
+
+.topic-top{
+    font-size: 23.65px;
+    color: #3d2514;
+}
+
+.topic{
+    font-size: 114.3px;
+}
+
+.topic-bottom{
+    font-size: 56.49px;
+}
+
+.sec2-l:hover,.sec2r:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    /* opacity: 0.5; */
+    color: #ffffff;
 }
 
 .sec2 h4{
@@ -66,6 +102,10 @@
     font-size: 41.67px;
 }
 
+.sec5{
+    color: #3d2514;
+}
+
 .sec5-mid h4{
     font-size: 29.17px;
 }
@@ -74,15 +114,11 @@
     font-size: 50px;
 }
 
-.booking{
+.booking,.booking input{
     font-size: 20.83px;
 }
 
 .sec6{
-    font-size: 16.67;
-}
-
-.sec6-tl{
-    font-size: 20.83px;
+    font-size: 16.67px;
 }
 

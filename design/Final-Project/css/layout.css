@@ -1,18 +1,20 @@
-.main-wrapper{
-    width: 1440px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
 .sec1{
     background: url("../images/S1-bg.jpg");
     background-repeat:repeat-x;
     padding-top: 53px;
+    /* width: 100%; */
+}
+
+.sec1-wrapper{
+    margin: 0 auto;
+    padding: 0 56px 0 57px;
+    width: 1440px;
 }
 
 .sec1-head{
+    /* width: 1327p x; */
     overflow: hidden;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .sec1-h-l{
@@ -21,9 +23,8 @@
 }
 
 .sec1-h-r{
-    width: 479px;
+    width: 529px;
     float: right;
-    overflow: hidden;
 }
 
 .phone{
@@ -33,30 +34,46 @@
 }
 
 .nav{
-    width: 479px;
+    margin-top: 24px;
     float: right;
     text-align: right;
 }
 
+.nav a{
+    margin: 0 23px;
+    color: #3d2514;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+}
+
 .sec1-bottom{
+    padding-left: 5px;
     overflow: hidden;    /* width: 1327px; */
 }
 
 .sec1-b-l{
+    margin-top: 149px;
     width: 532px;
     float: left;
 }
 
 .topic-top{
-    width: 404px;
+    width: 400px;
+    border: 2px dashed #3d2514;
+    text-align: center;
+    padding: 9px 0 5px 0 ;
 }
 
 .topic{
     width: 528px;
+    text-shadow: 4px 5px #fee8bc;
 }
 
 .topic-bottom{
     width: 195px;
+    text-shadow: 3px 5px #fee8bc;
 }
 
 .sec1-b-r{
@@ -67,15 +84,37 @@
 .sec1-br-img{
     width: 772px;
     height: 638px;
-    background: url(../images/sec1-burger.png);
+    background: url(../images/sec1-burger.png) 0 90%;
     /* background-attachment: fixed; */
     overflow: hidden;
     background-size:cover;
+    position: relative;
+    color: white;
 }
 
 
 .sec1-br-text{
-    width: 100px;
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    width: 174px;
+    height: 142px;
+    background: url("../images/price.png");
+    text-align: center;
+    padding-top: 32px;
+    border-radius: 87px;
+}
+
+.pricetop{
+    font-size: 30.37px;
+}
+
+.pricetop span{
+    font-size: 69.84px;
+}
+
+.pricebelow{
+    font-size: 33.4px;
 }
 
 .header-wrap{
@@ -83,20 +122,28 @@
 }
 
 .sec2{
-    background: green;
+    overflow: hidden;
+    padding-bottom: 67px;
 }
 
 .sec2-wrap{
     width: 1234px; 
     margin: 0 auto;
-    margin-top: 72px;
+    padding: 79px 97px 0 109px;
+    overflow: hidden;
+}
+
+.sec2l-wrap{
+    overflow: hidden;
+    background: url("../images/sec2-burger1.png");
+    float: left;
 }
 
 .sec2-l{
     width: 572px;
     height: 389px;
-    background: url("../images/sec2-burger1.png");
     float: left;
+    border-radius: 8px;
     padding: 31px 0 0 24px;
 }
 
@@ -104,7 +151,7 @@
     float: right;
     height: 420px;
     width: 596px;
-    padding-left: 29px;
+    margin-right: 0;  
     position: relative;
 }
 
@@ -112,35 +159,40 @@
     width: 188px;
 }
 
-.sec2-rt,.sec2-rb{
-    height: 161px;
-    width: 567px;
+
+.sec2rt-wrap, .sec2rb-wrap{
+    position: absolute;
+    height: 192px;
+    width: 596px;
 }
 
-.sec2-rt{
+.sec2rt-wrap{
     background: url("../images/sec2-burger2.png");
-    position: absolute;
-    padding: 31px 0 0 29px;
     top: 0;
 }
-
-.sec2-rb{
-    position: absolute;
-    padding: 31px 0 0 29px;
-    bottom: 0;
+.sec2rb-wrap{
     background: url("../images/sec2-burger3.png");
+    bottom: 0;
+}
+
+.sec2r{
+    border-radius: 8px;
+    padding: 25px 0 0 29px;
+    height: 167px;
+    width: 567px;
+    display: block;
 }
 
 
 
 .sec3{
-    background: red;
     /* overflow: hidden; */
+
 }
 
 .sec3-wrap{
-    margin-top: 67px;
-    margin-bottom: 135px;
+    width: 1440px;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -166,8 +218,9 @@
 }
 
 .sec3-bcontent{
+    margin: 0 40px;
     margin-top: 64px;
-    width: 332px;
+    width: 349px;
     float: left;
     text-align: center;
 }
@@ -175,6 +228,13 @@
 .sec3-img{
     height: 370px;
     overflow: hidden;
+    position: relative;
+}
+ 
+.sec3-img img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .desc{
@@ -185,34 +245,71 @@
     width: 195px;
     height: 38px;
     padding-top: 19px;
-    margin: 0 auto;
+    margin: 35px auto 0 auto;
     background-color: #bf2222;
     text-align: center;
+    overflow: hidden;
+    display: block;
+}
+
+
+.order:hover{
+    background-color: #8c1a1a;
 }
 
 .sec4{
-    background: green;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.sec4 .main-wrapper,.sec4 .main-wrapper{
+    overflow: visible;
 }
 
 .sec4-wrapper{
-    width:1215px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 25px 26px 27px 53px;
-    background-color: pink;
+    width:1294px;
+    box-shadow: 35px 5px 50px rgba(0, 0, 0, 0.2);
+    margin: 138px auto 0 auto;
+    padding: 50px 26px 54px 53px;
 }
 
 .sec4-wrapper2{
     width: 1215px;
     height: 440px;
     overflow: hidden;
-    background-color: blue;
+    margin: 0 auto;
 }
 
 .sec4-text{
     float: left;
-    width: 40%;
+    height: 370px;
+    width: 521px;
     margin-top: 38px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.btns{
+    position: absolute;
+    bottom: 0;
+}
+
+.round-btn{
+    background: url("../images/btn.png");
+    display: block;
+    height: 17px;
+    width: 17px;
+    float: left;
+    margin: 0 4px;
+
+}
+
+.round-btn:hover{
+    background: url("../images/btn-hover.png");
+}
+
+.round-btn.active{
+    background: url("../images/btn-active.png")
 }
 
 .sec4-r{
@@ -220,33 +317,67 @@
     float: right;
 }
 
-.sec5{
-    background: red;
-}
+.sec5 {
+    overflow: hidden;
+} 
 
-.sec5-left{
+/* .sec5-left{
     float: left;
     width: 351px;
+} */
+
+.sec5 .sec5-mid{
+    width: 812px;
+    text-align: center;
+    margin: 74px auto 0 auto;
 }
 
-.sec5-mid{
-    width: 810px;
-    float: left;
-    text-align: center;
+
+.sec5l{
+    width: 1440px;
+    height: 675px;
+    overflow: hidden;
+    margin: 0 auto;
+    background: url("../images/sec5-left.png") no-repeat 0 0;
 }
+
+.sec5r{
+    width: 1440px;
+    height: 675px;
+    overflow: hidden;
+    background: url("../images/sec5-right.png") no-repeat 120% 100%;
+}
+
 
 .booking{ 
     float: left;
     text-align: left;
-    height: 65px;
+    height: 63px;
     width: 377px;
-    margin: 13px;
-    background-color: blue;
-    border: 1px solid black;
+    margin: 13px; 
+    background-color: white;   
+    border: 1px solid #bebebe;
+    border-radius: 3px;
+}
+
+.booking input{
+    margin: 4px 22px;
+    width: 333px;
+    height: 51px;
+    outline: none;
+    border: none;
 }
 
 .submit{
+    border: none;
+    height: 65px;
+    width: 379px;
     text-align: center;
+    background-color: #bf2222;
+}
+
+.submit:hover{
+    background-color: #8c1a1a;
 }
 
 .sec5-right{
@@ -255,8 +386,12 @@
 }
 
 .sec6{
-    background: green;
-    margin-bottom: 66px;
+    padding-bottom: 66px;
+}
+
+.sec6-wrapper{
+    width: 1440px;
+    margin: 0 auto;
 }
 
 .sec6-wrap{
@@ -265,35 +400,52 @@
     padding: 0 41px 0 43px;
     margin: 0 auto;
     background: url("../images/sec6.jpg");
+    position: relative;
 }
 .sec6-top{
+    padding-top: 84px;
     overflow: hidden;
+    position: relative;
 }
 
 .sec6-tl{
     float: left;
-    width: 512px;
+    width: 525px;
+    /* background-color: red; */
 }
 
 .sec6-tr{
-    float: right;
-    width: 297px;
+    /* width: 297px; */
+    position: absolute;
+    bottom: 0;
+    right:96px;
 }
 
 .det-address{
-    width: 297px;
+    margin-top: 15px;
+}
+
+.det-address img{
+    margin-right: 34px;
 }
 
 .sec6-bot{
     overflow: hidden;
+    width: 1246px;
+    position: absolute;
+    bottom: 22px;
 }
 
 .sec6-bl{
     width: 241px;
     float: left;
+    padding-bottom: 9px;
 }
 
 .sec6-br{
-    width: 152px;
     float: right;
+}
+
+.sec6-br a{
+    margin: 0 4px;
 }
