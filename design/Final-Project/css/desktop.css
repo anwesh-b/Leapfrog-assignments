@@ -427,77 +427,9 @@
     }
     
     .sec6-wrap{
-        width: 1242px;
-        height: 525px;
-        padding: 0 30px 0 43px;
-        /* padding: 0 41px 0 43px; */
-        background: url("../images/sec6.jpg");
-        background-size: contain;
-        margin: 0 auto;
-    }
-    .sec6-top{
-        padding-top: 84px;
-        overflow: hidden;
-        position: static;
-    }
-    
-    .sec6-tl{
-        float: left;
-        width: 525px;
-        /* background-color: red; */
-    }
-    
-    .sec6-tl p{
-        margin-top: 39px;
-    }
-    
-    .sec6-tr{
-        /* width: 297px; */
-        position: static;
-        float: right;
-        /* position: absolute;
-        bottom: 0;
-        right:96px; */
-    }
-    
-    .det-address{
-        margin-top: 15px;
-    }
-    
-    .det-address img{
-        margin-right: 34px;
-    }
-    
-    .sec6-bot{
-        overflow: hidden;
-        margin-top: 462px;
-        width: 1246px;
-        position: static;
-        bottom: 0px;
-    }
-    
-    .sec6-bl{
-        width: 241px;
-        float: left;
-        padding-bottom: 9px;
-    }
-    
-    .sec6-br{
-        float: right;
-    }
-    
-    .sec6-br a{
-        margin: 0 4px;
-    }
-    
-    .sec2rb-wrap{
-        background: url("../images/sec2-burger3.png");
-        bottom: 0;
-    }
-    
-    .sec6-wrap{
         width: 1253px;
         height: 525px;
+        padding: 0 30px 0 43px;
         background: url("../images/sec6.jpg");
         background-size: contain;
         margin: 0 auto;
@@ -520,6 +452,7 @@
     }
     
     .sec6-tr{
+        
         max-width: 227px;
         bottom: 0px;
         position: absolute;
@@ -538,6 +471,8 @@
         overflow: hidden;
         margin-top: 232px;
         width: 1246px;
+        position: static;
+        bottom: 0px;
     }
     
     .sec6-bl{
@@ -553,4 +488,5 @@
     .sec6-br a{
         margin: 0 4px;
     }
+    
 }
