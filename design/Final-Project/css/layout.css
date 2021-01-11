@@ -525,12 +525,13 @@
         background: url("../images/S1-bg.jpg");
         background-repeat:repeat-x;
         padding-top: 33px;
-        max-width: 62.625em;
         min-width: 28px;
         width: 100%;
+        overflow: hidden;
     }
     
     .sec1-mainwrapper{
+        min-width: 62.625em;
         width: 100%;
         margin: 0 auto;
     }
@@ -1608,18 +1609,21 @@
     
     .sec6-br a{
         margin: 0 4px;
-    }.sec1{
+    }
+    
+    .sec1{
         background: url("../images/S1-bg.jpg");
         background-repeat:repeat-x;
         padding-top: 53px;
         min-width: 90em;
-        width: 100%;
+        /* width: 100%; */
+        overflow: hidden;
     }
     
     .sec1-wrapper{
         margin: 0 auto;
         padding: 0 56px 0 57px;
-        max-width: 1327px;
+        min-width: 1327px;
     }
     
     .sec1-head{
