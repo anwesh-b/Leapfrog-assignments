@@ -4,12 +4,12 @@
         background-repeat:repeat-x;
         padding-top: 33px;
         max-width: 62.625em;
-        min-width: 28px;
+        /* min-width: 28px; */
         width: 100%;
     }
     
     .sec1-mainwrapper{
-        width: 100%;
+        min-width: 48em;
         margin: 0 auto;
     }
     
