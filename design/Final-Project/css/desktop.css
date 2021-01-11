@@ -6,6 +6,7 @@
         padding-top: 53px;
         min-width: 90em;
         width: 100%;
+        margin: 0 auto;
     }
     
     .sec1-wrapper{
@@ -126,6 +127,7 @@
     }
     
     .sec2{
+        margin: 0 auto;
         overflow: hidden;
         padding-bottom: 67px;
         min-width: 90em;
@@ -197,6 +199,7 @@
         /* overflow: hidden; */
         min-width: 90em;
         width: 100%;
+        margin: 0 auto;
     }
     
     .sec3-wrap{
@@ -270,6 +273,7 @@
         padding-bottom: 60px;
         min-width: 90em;
         width: 100%;
+        margin: 0 auto;
     }
     
     .sec4-mainwrap{
@@ -338,6 +342,7 @@
         overflow: hidden;
         min-width: 90em;
         width: 100%;
+        margin: 0 auto;
     } 
     
     .sec5-wrapper{
@@ -412,6 +417,7 @@
         padding-bottom: 66px;
         min-width: 86em;
         width: 100%;
+        margin: 0 auto;
     }
     
     .sec6-wrapper{
