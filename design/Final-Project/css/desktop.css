@@ -1,11 +1,8 @@
 
 @media only screen and (min-width: 1002px) {
     .sec1{
-        background: url("../images/S1-bg.jpg");
-        background-repeat:repeat-x;
         padding-top: 53px;
         min-width: 90em;
-        width: 100%;
         margin: 0 auto;
     }
     
@@ -15,37 +12,25 @@
         max-width: 1327px;
     }
     
-    .sec1-head{
-        /* width: 1327p x; */
-        overflow: hidden;
-        /* margin: 0 auto; */
-    }
     
     .sec1-h-l{
         width: 264px;
-        float: left;
     }
     
     .sec1-h-r{
         width: 529px;
-        float: right;
     }
     
     .phone{
-        float: right;
         width: 328px;
-        text-align: right;
     }
     
     .nav{
         margin-top: 24px;
-        float: right;
-        text-align: right;
     }
     
     .nav a{
         margin: 0 23px;
-        color: #3d2514;
     }
     
     .nav a:hover{
@@ -55,7 +40,6 @@
     .sec1-bottom{
         width: 100%;
         padding-left: 5px;
-        overflow: hidden;    /* width: 1327px; */
     }
     
     .sec1-b-l{
@@ -65,95 +49,37 @@
     }
     
     .topic-top{
-        width: 400px;
-        border: 2px dashed #3d2514;
-        text-align: center;
         padding: 9px 0 5px 0 ;
     }
     
     .topic{
         width: 528px;
-        text-shadow: 4px 5px #fee8bc;
     }
     
     .topic-bottom{
         width: 195px;
-        text-shadow: 3px 5px #fee8bc;
-    }
-    
-    .sec1-b-r{
-        /* width: 772px; */
-        /* float: left; */
-    }
-    
-    .sec1-br-img{
-        width: 772px;
-        height: 638px;
-        background: url(../images/sec1-burger.png) 0 90%;
-        /* background-attachment: fixed; */
-        overflow: hidden;
-        background-size:cover;
-        position: relative;
-        color: white;
-    }
-    
-    
-    .sec1-br-text{
-        position: absolute;
-        left: 60px;
-        bottom: 60px;
-        width: 174px;
-        height: 142px;
-        background: url("../images/price.png");
-        text-align: center;
-        padding-top: 32px;
-        border-radius: 87px;
-    }
-    
-    .pricetop{
-        font-size: 30.37px;
-    }
-    
-    .pricetop span{
-        font-size: 69.84px;
-    }
-    
-    .pricebelow{
-        font-size: 33.4px;
-    }
-    
-    .header-wrap{
-        width: 1327px;
     }
     
     .sec2{
         margin: 0 auto;
-        overflow: hidden;
         padding-bottom: 67px;
         min-width: 90em;
-        width: 100%;
     }
     
     .sec2-wrap{
         width: 1234px; 
         margin: 0 auto;
         padding: 79px 97px 0 109px;
-        overflow: hidden;
     }
     
     .sec2l-wrap{
-        overflow: hidden;
         height: 420px;
         width: 596px;
-        background: url("../images/sec2-burger1.png");
-        float: left;
     }
     
     .sec2-l{
         width: 572px;
         height: 389px;
-        float: left;
-        border-radius: 8px;
         padding: 31px 0 0 24px;
     }
     
@@ -177,26 +103,22 @@
     }
     
     .sec2rt-wrap{
-        background: url("../images/sec2-burger2.png");
         top: 0;
     }
+
     .sec2rb-wrap{
-        background: url("../images/sec2-burger3.png");
         bottom: 0;
     }
     
     .sec2r{
-        border-radius: 8px;
-        padding: 25px 0 0 29px;
+       padding: 25px 0 0 29px;
         height: 167px;
         width: 567px;
-        display: block;
     }
     
     
     
     .sec3{
-        /* overflow: hidden; */
         min-width: 90em;
         width: 100%;
         margin: 0 auto;
@@ -204,15 +126,10 @@
     
     .sec3-wrap{
         width: 100%;
-        overflow: hidden;
     }
     
     .sec3-top{
-        margin: 0 auto;
         padding-top: 11px;
-        width: 218px;
-        height: 37px;
-        text-align: center;
     }
     
     
@@ -220,60 +137,25 @@
         width: 1055px;
         margin: 0 auto;
         padding-top: 35px;
-        text-align: center;
     }
     
     .sec3-bottom{
-        width: 1333px;
-        margin: 0 auto;                  
+        width: 1333px;            
     }
     
     .sec3-bcontent{
         margin: 0 40px;
         margin-top: 64px;
         width: 349px;
-        float: left;
-        text-align: center;
-    }
-    
-    .sec3-img{
-        height: 370px;
-        overflow: hidden;
-        position: relative;
-    }
-     
-    .sec3-img img{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-    
-    .desc{
-        margin-top: 15px;
     }
     
     .order{
-        width: 195px;
-        height: 38px;
         padding-top: 19px;
-        margin: 35px auto 0 auto;
-        background-color: #bf2222;
-        text-align: center;
-        overflow: hidden;
-        display: block;
-    }
-    
-    
-    .order:hover{
-        background-color: #8c1a1a;
     }
     
     .sec4{
-        overflow: hidden;
-        padding-bottom: 60px;
         min-width: 90em;
         width: 100%;
-        margin: 0 auto;
     }
     
     .sec4-mainwrap{
@@ -287,7 +169,6 @@
     
     .sec4-wrapper{
         width:1294px;
-        box-shadow: 35px 5px 50px rgba(0, 0, 0, 0.2);
         margin: 138px auto 0 auto;
         padding: 50px 26px 54px 53px;
     }
@@ -295,8 +176,6 @@
     .sec4-wrapper2{
         width: 1215px;
         height: 440px;
-        overflow: hidden;
-        margin: 0 auto;
         position: static;
     }
     
@@ -310,36 +189,11 @@
         padding: 0px;
     }
     
-    .btns{
-        position: absolute;
-        bottom: 0;
-    }
-    
-    .round-btn{
-        background: url("../images/btn.png");
-        display: block;
-        height: 17px;
-        width: 17px;
-        float: left;
-        margin: 0 4px;
-    
-    }
-    
-    .round-btn:hover{
-        background: url("../images/btn-hover.png");
-    }
-    
-    .round-btn.active{
-        background: url("../images/btn-active.png")
-    }
-    
     .sec4-r{
         width: 659px;
-        float: right;
     }
     
     .sec5 {
-        overflow: hidden;
         min-width: 90em;
         width: 100%;
         margin: 0 auto;
@@ -347,13 +201,10 @@
     
     .sec5-wrapper{
         max-width: 90em;
-        margin: 0 auto;
-        overflow: visible;
     }
     
     .sec5 .sec5-mid{
         width: 812px;
-        text-align: center;
         margin: 74px auto 0 auto;
     }
     
@@ -363,14 +214,11 @@
         height: 675px;
         overflow: hidden;
         margin: 0 auto;
-        background: url("../images/sec5-left.png") no-repeat 0 0;
     }
     
     .sec5r{
         width: 100%;
         height: 675px;
-        overflow: hidden;
-        background: url("../images/sec5-right.png") no-repeat 120% 100%;
     }
     
     .book-wrap{
@@ -378,40 +226,10 @@
     }
     
     .booking{ 
-        float: left;
-        text-align: left;
-        height: 63px;
         width: 377px;
         margin: 13px; 
-        background-color: white;   
-        border: 1px solid #bebebe;
-        border-radius: 3px;
     }
     
-    .booking input{
-        margin: 4px 22px;
-        width: 333px;
-        height: 51px;
-        outline: none;
-        border: none;
-    }
-    
-    .booking.submit{
-        border: none;
-        height: 45px;
-        width: 379px;
-        text-align: center;
-        background-color: #bf2222;
-    }
-    
-    .submit:hover{
-        background-color: #8c1a1a;
-    }
-    
-    .sec5-right{
-        float: right;
-        width: 305px;
-    }
     
     .sec6{
         padding-bottom: 66px;
@@ -421,8 +239,6 @@
     }
     
     .sec6-wrapper{
-        overflow: hidden;
-        margin: 0 auto;
         max-width: 1326px;
     }
     
@@ -430,21 +246,15 @@
         width: 1253px;
         height: 525px;
         padding: 0 30px 0 43px;
-        background: url("../images/sec6.jpg");
-        background-size: contain;
-        margin: 0 auto;
     }
     .sec6-top{
         padding-top: 84px;
-        overflow: hidden;
         margin-right: 96px;
-        position: relative;
     }
     
     .sec6-tl{
         float: left;
         width: 525px;
-        /* background-color: red; */
     }
     
     .sec6-tl p{
@@ -452,23 +262,13 @@
     }
     
     .sec6-tr{
-        
         max-width: 227px;
         bottom: 0px;
         position: absolute;
         right:0;
     }
     
-    .det-address{
-        margin-top: 15px;
-    }
-    
-    .det-address img{
-        margin-right: 34px;
-    }
-    
     .sec6-bot{
-        overflow: hidden;
         margin-top: 232px;
         width: 1246px;
         position: static;
@@ -477,16 +277,7 @@
     
     .sec6-bl{
         width: 241px;
-        float: left;
         padding-bottom: 9px;
-    }
-    
-    .sec6-br{
-        float: right;
-    }
-    
-    .sec6-br a{
-        margin: 0 4px;
     }
     
 }

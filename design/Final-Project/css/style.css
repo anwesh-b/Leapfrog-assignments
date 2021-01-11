@@ -27,6 +27,11 @@
 
 
 
+.sec1{
+    background: url("../images/S1-bg.jpg");
+    background-repeat:repeat-x;
+}
+
 
 .nav{
     font-size: 14.83px;
@@ -54,6 +59,31 @@
     font-size: 30.49px;
 }
 
+.sec1-br-img{
+    background: url(../images/sec1-burger.png) 0 90%;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+.sec1-br-text{
+    background: url("../images/price.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.pricetop{
+    font-size: 15.185px;
+}
+
+.pricetop span{
+    font-size: 34.92px;
+}
+
+.pricebelow{
+    font-size: 16.7px;
+}
+
 .sec2-l:hover,.sec2r:hover{
     background-color: rgba(0, 0, 0, 0.5);
     /* opacity: 0.5; */
@@ -74,6 +104,23 @@
 
 .sec2 .sec2-r h2{
     font-size: 35.67px;
+}
+
+.sec2l-wrap{
+    background: url("../images/sec2-burger1.png");
+    background-size: contain;
+}
+
+.sec2rt-wrap, .sec2rb-wrap{
+    background-size: contain;
+}
+
+.sec2rt-wrap{
+    background: url("../images/sec2-burger2.png");
+}
+
+.sec2rb-wrap{
+    background: url("../images/sec2-burger3.png");
 }
 
 .sec3{
@@ -103,6 +150,11 @@
 
 .order{
     text-transform: uppercase;
+    background-color: #bf2222;
+}
+
+.order:hover{
+    background-color: #8c1a1a;
 }
 
 .sec4{
@@ -123,6 +175,19 @@
     font-size: 25.67px;
 }
 
+.round-btn{
+    background: url("../images/btn.png");
+    display: block;
+}
+
+.round-btn:hover{
+    background: url("../images/btn-hover.png");
+}
+
+.round-btn.active{
+    background: url("../images/btn-active.png")
+}
+
 .sec5{
     color: #3d2514;
 }
@@ -139,23 +204,61 @@
     font-size: 20.83px;
 }
 
+.booking{ 
+    text-align: left;
+    background-color: white;   
+    border: 1px solid #bebebe;
+}
+
+.booking.submit{
+    background-color: #bf2222;
+}
+
+.submit{
+    text-align: center;
+    background-color: #bf2222;
+}
+
+.submit:hover{
+    background-color: #8c1a1a;
+}
+
 .sec6{
     font-size: 16.67px;
 }
 
+.sec6-wrap{
+    background: url("../images/sec6.jpg");
+}
+
 
 @media only screen and (min-width: 768px){
-    
-.nav{
-    font-size: 20.83px;
-    letter-spacing: 4px;
-}
+  
+    .sec1-br-img{
+        background-size:cover;
+    }
+
+    .nav{
+        font-size: 20.83px;
+        letter-spacing: 4px;
+    }
 
 .phone{
     font-size: 16.67px;
 }
 
 
+.pricetop{
+    font-size: 30.37px;
+}
+
+.pricetop span{
+    font-size: 69.84px;
+}
+
+.pricebelow{
+    font-size: 33.4px;
+}
 
 .topic-top{
     font-size: 23.65px;
@@ -172,6 +275,14 @@
 
     .sec5{
         color: #3d2514;
+    }
+
+    .sec5l{
+        background: url("../images/sec5-left.png") no-repeat -20% 0;
+    }
+    
+    .sec5r{
+        background: none;
     }
     
     .sec5-mid h4{
@@ -299,6 +410,10 @@
     color: #3d2514;
 }
 
+.sec5r{
+    background: url("../images/sec5-right.png") no-repeat 120% 100%;
+}
+
 .sec5-mid h4{
     font-size: 29.17px;
 }
@@ -313,6 +428,10 @@
 
 .sec6{
     font-size: 16.67px;
+}
+
+.sec6-wrap{
+    background-size: contain;
 }
 
 
