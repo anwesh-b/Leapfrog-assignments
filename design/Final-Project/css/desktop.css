@@ -156,6 +156,8 @@
     .sec4{
         min-width: 90em;
         width: 100%;
+        margin: 0 auto;
+        overflow: visible;
     }
     
     .sec4-mainwrap{
