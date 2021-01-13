@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    /* min-height: 100%; */
+    height: 100%;
+    background-color: #fafafa;
+}
+
+.row{
+    width: 100%;
+    background-color: #f5c9c9;
+    overflow: hidden;
+}
+
+.seperator{
+    height: 1px;
+    width: 100%;
+    background-color: #a8a1a1;
+}
+
+.box{
+    height: 250px;
+    width: 250px;
+    background-color: #ffffff;
+    border:1px solid #a8a1a1;
+    margin: 1% auto;
+    position: relative;
+}
+
+.plot-point{
+    height: 4px;
+    width: 4px;
+    background-color: #4499cb;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.animation-ball{
+    height: 40px;
+    width: 40px;
+    left: 105px;
+    background-color: #4499cb;
+    position: absolute;
+    border-radius: 20px;
+}
+
+h2 span{
+    text-align: center;
+    margin: 0 auto;
+}

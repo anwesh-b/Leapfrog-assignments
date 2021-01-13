@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>JS DOM Practice</title>
+</head>
+<body>
+    <div class="row">
+        <div class="box" id="plot">
+        </div>
+        <h2>
+            Plotting
+        </h2>
+        <button id='reset'>Reset</button>
+        <form id='add-form'> 
+            <input type="number" name="x" placeholder="x" max="250">
+            <input type="number" name="y" placeholder="y" max="250">
+            <input type="submit" value="&nbsp;ADD&nbsp;">
+        </form>
+    </div>
+    <div class="seperator"></div>
+    <div class="row">
+        <div class="box" id="animate">
+        </div>
+        <h2>
+                Animation
+        </h2>
+        <button id='playpause'>Pause</button>
+        Speed 
+        <button id='inc'>&nbsp; + &nbsp;</button>
+        <button id='dec'>&nbsp; - &nbsp;</button>
+    </div>
+    <script src="./plot.js"></script>
+    <script src="./animation.js"></script>
+</body>
+</html>
