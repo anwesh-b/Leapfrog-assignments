@@ -1,6 +1,6 @@
 @media only screen and (min-width: 768px) {
     .sec1{
-        max-width: 62.625em;
+        /* max-width: 62.625em; */
         width: 100%;
     }
     
@@ -27,7 +27,7 @@
     }
     
     .sec1-b-l{
-        max-width: 532px;
+        /* max-width: 532px; */
         top: 85px;
     }
     
@@ -156,5 +156,9 @@
     
     .sec6-wrapper{
         min-width: 768px;
+    }
+
+    .sec6-bl{
+        width: ;
     }
 }

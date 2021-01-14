@@ -286,7 +286,7 @@
 }
 
 .sec4-text{
-    float: left;
+    /* float: left; */
     height: 84.090909%;
     width: 90%;
     padding: 0 5%;
