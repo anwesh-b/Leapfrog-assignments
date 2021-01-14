@@ -278,7 +278,7 @@
     }
 
     .sec5l{
-        background: url("../images/sec5-left.png") no-repeat 0 0;
+        background: url("../images/sec5-left.png") no-repeat 16px 0;
     }
     
     .sec5r{
@@ -298,141 +298,141 @@
 @media only screen and (min-width: 1002px){
     
 
-.sec2 a,.order,.submit,.sec6{
-    color: #ffffff;
-}
+    .sec2 a,.order,.submit,.sec6{
+        color: #ffffff;
+    }
 
 
-.nav,.sec1-br-text,.sec2,.sec3-top,.title,h4,.sec6-tr{
-    font-family: 'BebasNeueBold';
-}
+    .nav,.sec1-br-text,.sec2,.sec3-top,.title,h4,.sec6-tr{
+        font-family: 'BebasNeueBold';
+    }
 
-.topic-top, .booking input,.sec6-bl{
-    font-family: 'BebasNeueRegular';
-    font-weight: normal;
-    font-style: normal;
-}
+    .topic-top, .booking input,.sec6-bl{
+        font-family: 'BebasNeueRegular';
+        font-weight: normal;
+        font-style: normal;
+    }
 
-.phone, .desc, .sec3-mid,.sec4, .sec6-tl p{
-    font-family: 'Montserrat', sans-serif;
-}
+    .phone, .desc, .sec3-mid,.sec4, .sec6-tl p{
+        font-family: 'Montserrat', sans-serif;
+    }
 
-.topic, .topic-bottom, .sec3-mid h2,.order, .sec4-text h1, .sec5-mid h2, .submit{
-    font-family: 'Alfa Slab One', cursive;
-}
+    .topic, .topic-bottom, .sec3-mid h2,.order, .sec4-text h1, .sec5-mid h2, .submit{
+        font-family: 'Alfa Slab One', cursive;
+    }
 
-.sec1-bottom,.sec2{
-    text-transform: uppercase;
-}
-
-
-
-.nav{
-    font-size: 20.83px;
-    letter-spacing: 4px;
-}
-
-.phone{
-    font-size: 16.67px;
-}
+    .sec1-bottom,.sec2{
+        text-transform: uppercase;
+    }
 
 
 
-.topic-top{
-    font-size: 23.65px;
-    color: #3d2514;
-}
+    .nav{
+        font-size: 20.83px;
+        letter-spacing: 4px;
+    }
 
-.topic{
-    font-size: 114.3px;
-}
+    .phone{
+        font-size: 16.67px;
+    }
 
-.topic-bottom{
-    font-size: 56.49px;
-}
 
-.sec2-l:hover,.sec2r:hover{
-    background-color: rgba(0, 0, 0, 0.5);
-    /* opacity: 0.5; */
-    color: #ffffff;
-}
 
-.sec2 h4{
-    font-size: 25px;
-}
+    .topic-top{
+        font-size: 23.65px;
+        color: #3d2514;
+    }
 
-.sec2 h2{
-    font-size: 41.67px;
-}
+    .topic{
+        font-size: 114.3px;
+    }
 
-.sec3{
-    color: #3d2514;
-}
+    .topic-bottom{
+        font-size: 56.49px;
+    }
 
-.sec3-top{
-    background-color: #ffc045;
-    font-size: 25px;
-}
+    .sec2-l:hover,.sec2r:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+        /* opacity: 0.5; */
+        color: #ffffff;
+    }
 
-.sec3-mid{
-    font-size: 16.67px;
-}
+    .sec2 h4{
+        font-size: 25px;
+    }
 
-.sec3-mid h2{
-    font-size: 50px;
-}
+    .sec2 h2{
+        font-size: 41.67px;
+    }
 
-.sec3-bcontent{
-    font-size: 16.67px;
-}
+    .sec3{
+        color: #3d2514;
+    }
 
-.title{
-    font-size: 37.5px;
-}
+    .sec3-top{
+        background-color: #ffc045;
+        font-size: 25px;
+    }
 
-.sec4{
-    color: black;
-}
+    .sec3-mid{
+        font-size: 16.67px;
+    }
 
-.sec4-text{
-    font-size: 20.83px;
-}
+    .sec3-mid h2{
+        font-size: 50px;
+    }
 
-.sec4-text h4{
-    font-size: 29.17px;
-}
+    .sec3-bcontent{
+        font-size: 16.67px;
+    }
 
-.sec4-text h1{
-    font-size: 41.67px;
-}
+    .title{
+        font-size: 37.5px;
+    }
 
-.sec5{
-    color: #3d2514;
-}
+    .sec4{
+        color: black;
+    }
 
-.sec5r{
-    background: url("../images/sec5-right.png") no-repeat 120% 100%;
-}
+    .sec4-text{
+        font-size: 20.83px;
+    }
 
-.sec5-mid h4{
-    font-size: 29.17px;
-}
+    .sec4-text h4{
+        font-size: 29.17px;
+    }
 
-.sec5-mid h2{
-    font-size: 50px;
-}
+    .sec4-text h1{
+        font-size: 41.67px;
+    }
 
-.booking,.booking input{
-    font-size: 20.83px;
-}
+    .sec5{
+        color: #3d2514;
+    }
 
-.sec6{
-    font-size: 16.67px;
-}
+    .sec5r{
+        background: url("../images/sec5-right.png") no-repeat 117.8% 266px;
+    }
 
-.sec6-wrap{
-    background-size: contain;
-}
+    .sec5-mid h4{
+        font-size: 29.17px;
+    }
+
+    .sec5-mid h2{
+        font-size: 50px;
+    }
+
+    .booking,.booking input{
+        font-size: 20.83px;
+    }
+
+    .sec6{
+        font-size: 16.67px;
+    }
+
+    .sec6-wrap{
+        background-size: contain;
+    }
 
 
 }

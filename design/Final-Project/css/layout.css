@@ -212,7 +212,7 @@
 
 
 .sec3-mid{
-    max-width: 1055px;
+    /* max-width: 1055px; */
     width: 73.263889%;
     margin: 0 auto;
     padding-top: 2.430556%;
@@ -252,7 +252,7 @@
     width: 195px;
     height: 38px;
     padding-top: 5.444126%;
-    margin: 35px auto 0 auto;
+    margin: 37px auto 0 auto;
     text-align: center;
     overflow: hidden;
     display: block;

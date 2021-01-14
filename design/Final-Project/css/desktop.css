@@ -124,16 +124,13 @@
     }
     
     .sec3-wrap{
-        width: 100%;
+        width: 1385px;
+        padding-left: 55px;
     }
-    
-    .sec3-top{
-    }
-    
     
     .sec3-mid{
-        width: 1055px;
-        margin: 0 auto;
+        width: 1062px;
+        margin: 0 auto;          
         padding-top: 28px;
     }
 
@@ -142,15 +139,21 @@
     }
     
     .sec3-bottom{
-        width: 1333px;            
+        width: 1395px;  
+        max-width: 1395px;
+        margin: 0 0 0 55px;          
     }
     
     .sec3-bcontent{
-        margin: 0 40px;
+        margin: 0 52px;
         margin-top: 64px;
-        width: 349px;
+        width: 361px;
     }
     
+    .title{
+        margin-top: 21px;
+    }
+
     .order{
         padding-top: 19px;
     }
@@ -222,7 +225,7 @@
     
     .sec5r{
         width: 100%;
-        height: 675px;
+        height: 690px;
     }
     
     .book-wrap{
