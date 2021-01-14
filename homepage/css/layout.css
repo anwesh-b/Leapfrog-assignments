@@ -4,13 +4,20 @@ body{
     margin-top: 50px;
 }
 
+
+.info{
+    padding: 25px 25px 0 25px;
+}
+
 .details{
     margin: 15px 0 10px 0;
 }
 
+
 table{
     width: 100%;
-    max-width: 541px;
+    max-width: 600px;
+    min-width: 400px;
     border-collapse: collapse;
 }
 
