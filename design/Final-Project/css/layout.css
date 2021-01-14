@@ -420,6 +420,10 @@
     margin: 0 auto;
 }
 
+.sec6-tr img{
+    /* margin-top: 10px; */
+}
+
 .det-address{
     margin-top: 15px;
 }
