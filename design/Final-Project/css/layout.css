@@ -47,8 +47,12 @@
     text-align: right;
 }
 
+.nav li{
+    display: inline;
+}
+
 .nav a{
-    margin: 0 2.347826%;
+    margin: 0 0 0 2.347826%;
     color: #3d2514;
 }
 
@@ -201,7 +205,8 @@
     margin: 0 auto;
     padding-top: 0.763889%;
     width: 218px;
-    height: 37px;
+    padding: 11px 0;
+    /* height: 37px; */
     text-align: center;
 }
 
@@ -348,11 +353,11 @@
     height: 63px;
     width: 356px;
     margin: 13px 0; 
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .booking input{
-    margin: 4px 22px;
+    margin: 6px 21px;
     width: 333px;
     height: 51px;
     outline: none;
@@ -419,16 +424,21 @@
     margin-top: 15px;
 }
 
-.det-address img{
-    margin-right: 34px;
+
+.location{
+    margin-left: 32px;
+}
+
+.email{
+    margin-left: 34px;
 }
 
 .sec6-bot{
     overflow: hidden;
     width: 80%;
-    position: absolute;
-    bottom: 11px;
-    left: 10%;
+    /* position: absolute;   */
+    /* bottom: 11px; */
+    margin: 10% 0 0 10%;
 }
 
 .sec6-bl{
@@ -439,6 +449,7 @@
     float: right;
 }
 
-.sec6-br a{
-    margin: 0 4px;
+.sec6-br li{
+    display: inline;
+    margin-left: 8px;
 }
