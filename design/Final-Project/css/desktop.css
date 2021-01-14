@@ -67,8 +67,8 @@
     
     .sec2-wrap{
         width: 1234px; 
-        margin: 0 auto;
-        margin: 79px 97px 0 109px;
+        /* margin: 0 auto; */
+        margin: 79px auto 0 auto;
     }
     
     .sec2l-wrap{

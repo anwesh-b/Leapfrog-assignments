@@ -109,10 +109,12 @@
 .sec2l-wrap{
     background: url("../images/sec2-burger1.png");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .sec2rt-wrap, .sec2rb-wrap{
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .sec2rt-wrap{
