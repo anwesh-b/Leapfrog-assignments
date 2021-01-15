@@ -203,17 +203,20 @@
     .sec5 {
         min-width: 90em;
         width: 100%;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     } 
     
     .sec5-wrapper{
         max-width: 90em;
+        overflow: visible;
     }
     
     .sec5 .sec5-mid{
         width: 812px;
         margin: 57px auto 0 auto;
+        padding-right: 103px;
     }
+
     
     
     .sec5l{
@@ -224,7 +227,7 @@
     }
     
     .sec5r{
-        width: 100%;
+        width: 1638px;
         height: 690px;
     }
     
