@@ -60,7 +60,7 @@
 }
 
 .sec1-br-img{
-    background: url(../images/sec1-burger.png) 0 90%;
+    background: url("../images/sec1-burger.png") 0 90%;
     background-repeat: no-repeat;
     background-size:100%;
 }

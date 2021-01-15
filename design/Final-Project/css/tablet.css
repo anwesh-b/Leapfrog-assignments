@@ -23,7 +23,7 @@
     
     .sec1-bottom{
         height: 638px;
-        width: 756px;
+        width: 100%;
     }
     
     .sec1-b-l{
@@ -48,7 +48,10 @@
         max-height: 638px;
         float: right;
     }
-    
+    .sec1-br-img{
+        background: url("../images/sec1-burger.png") right;
+        background-repeat: no-repeat;
+    }
     
     .sec1-br-text{
         left: 60px;
