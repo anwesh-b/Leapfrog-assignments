@@ -1,0 +1,18 @@
+
+.carousel-container{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    /* overflow: hidden; */
+    border: 1px solid;
+}
+
+.image-container{
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+}
+
+.carousel-container img{
+    float: left;
+}
