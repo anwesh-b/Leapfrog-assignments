@@ -10,9 +10,49 @@
 .image-container{
     height: 200px;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 }
 
 .carousel-container img{
     float: left;
+}
+
+.buttoncontainer{
+    position: absolute;
+    bottom: 15px;   
+    height: 14px;
+    display: inline;
+    z-index: 4;
+}
+
+.carousel-button{
+    display: block;
+    height: 14px;
+    width: 14px;
+    border-radius: 7px;
+    margin: 0 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 3px #838383;
+    float: left;
+}
+
+.carousel-button.active{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-left-control,.carousel-right-control{
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    top: 20px;
+    background-color: rgba(150, 150, 150, 0.6);
+    z-index: 4;
+}
+
+.carousel-left-control{
+    left: 0;
+}
+
+.carousel-right-control{
+    right: 0;
 }
