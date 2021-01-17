@@ -63,3 +63,8 @@
 .carousel-right-control{
     right: 0;
 }
+
+button{
+    background: none;
+    border: none;
+}

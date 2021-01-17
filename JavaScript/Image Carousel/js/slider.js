@@ -2,9 +2,9 @@ const fps = 1000/60;
 const width = 300;
 
 class Carousel{
-    constructor(selectdiv){
-        this.transitionTime = 300;
-        this.sliderTime = 2000;
+    constructor(selectdiv, transitionTime, sliderTime){
+        this.transitionTime = transitionTime || 300;
+        this.sliderTime = sliderTime || 2000;
         this.height = 200;
         this.position = 0;
         
@@ -31,7 +31,6 @@ class Carousel{
             this.buttonContainer.style.width = (14+3+3)*this.imgs + 'px';
             this.carouselContainer.appendChild(this.buttonContainer);
             this.button = [];
-            console.log(this.imgs);
             for(let i = 0; i<this.imgs ; i++){
                 this.button[i] = document.createElement('div');
                 this.button[i].setAttribute('class','carousel-button');
@@ -47,18 +46,20 @@ class Carousel{
         }
 
         this.createControls = function(){
-            this.leftControl = document.createElement('div');
+            this.leftControl = document.createElement('button');
             this.leftControl.setAttribute('class','carousel-left-control');
             this.leftControl.innerHTML = '<';
+
             this.leftControl.addEventListener('click',()=>{
                 this.slideTo(this.position - 1);
             })
 
-            this.rightControl = document.createElement('div');
+            this.rightControl = document.createElement('button');
             this.rightControl.setAttribute('class','carousel-right-control');
             this.rightControl.innerHTML = '>';
             this.rightControl.addEventListener('click',()=>{
                 this.slideTo(this.position + 1);
+                
             })
 
             this.leftControl.style.top = this.rightControl.style.top = (this.height - 40) / 2 + 'px';
@@ -81,37 +82,59 @@ class Carousel{
         this.createControls();
 
         this.slide = async function (target){
-            // console.log(this.position)
             let currentStep = target - this.position;
             let step = fps * width * currentStep / this.transitionTime;
             var slideAnimation = setInterval(()=>{
                 this.container.style.left = parseFloat(this.container.style.left.replace('px','')) - step   + 'px';
-                console.log(this.container.style.left)
-                if(parseInt(this.container.style.left.replace('px','')) == target*width*-1){
-                    console.log('Ok');
+                if(Math.abs(parseInt(this.container.style.left.replace('px','')) - (target*width*-1)) < 1){
                     clearInterval(slideAnimation);
+                    this.leftControl.disabled = false;
+                    this.rightControl.disabled = false;
+                }
+                if(Math.abs(parseInt(this.container.style.left.replace('px','')))>width*this.imgs){
+                    this.container.style.left = '0px';
                 }
             }, fps);
         }
 
-        this.defaultSlider = setInterval(()=>{
-            this.slideTo(this.position+1);
-        },this.sliderTime)  
+        this.defaultSlider = function(){
+            this.autoSlide = setInterval(()=>{
+                this.slideTo(this.position+1);
+            },this.sliderTime)
+        }
         
+        this.stopSlider = function(){
+            clearInterval(this.autoSlide);
+        }
+        
+        this.defaultSlider();
+        
+        window.addEventListener('blur',(x)=>{
+            this.stopSlider();
+        })
+
+        window.addEventListener('focus',()=>{
+            this.defaultSlider();
+        })
+
+        this.slideTo = function(target){
+            this.leftControl.disabled = true;
+            this.rightControl.disabled = true;
+            this.button[this.position].setAttribute('class','carousel-button');
+            if(target > this.imgs-1){
+                target = 0;
+            }
+            if(target < 0){
+                target = this.imgs - 1;
+            }
+            this.slide(target).then(()=>{
+                this.container.style.left = parseInt(this.container.style.left.replace('px','')) + 'px';
+                this.position = target
+                this.button[this.position].setAttribute('class','carousel-button active');
+            });
+        }
     }    
 
-    slideTo(target){
-        this.button[this.position].setAttribute('class','carousel-button');
-        if(target > this.imgs-1){
-            target = 0;
-        }
-        if(target < 0){
-            target = this.imgs - 1;
-        }
-        this.slide(target).then(()=>{
-            this.position = target
-            this.button[this.position].setAttribute('class','carousel-button active');
-        });
-    }
+   
 
 }
