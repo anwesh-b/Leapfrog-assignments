@@ -5,11 +5,8 @@ class Carousel{
     constructor(selectdiv){
         this.transitionTime = 300;
         this.sliderTime = 2000;
-
+        this.height = 200;
         this.position = 0;
-
-
-
         
         this.carouselContainer = document.getElementsByClassName(selectdiv)[0];
         if(selectdiv!=='carousel-container'){
@@ -52,15 +49,19 @@ class Carousel{
         this.createControls = function(){
             this.leftControl = document.createElement('div');
             this.leftControl.setAttribute('class','carousel-left-control');
+            this.leftControl.innerHTML = '<';
             this.leftControl.addEventListener('click',()=>{
                 this.slideTo(this.position - 1);
             })
 
             this.rightControl = document.createElement('div');
             this.rightControl.setAttribute('class','carousel-right-control');
+            this.rightControl.innerHTML = '>';
             this.rightControl.addEventListener('click',()=>{
                 this.slideTo(this.position + 1);
             })
+
+            this.leftControl.style.top = this.rightControl.style.top = (this.height - 40) / 2 + 'px';
             
             this.carouselContainer.appendChild(this.leftControl);
             this.carouselContainer.appendChild(this.rightControl);
@@ -80,15 +81,17 @@ class Carousel{
         this.createControls();
 
         this.slide = async function (target){
-            console.log(this.position)
+            // console.log(this.position)
             let currentStep = target - this.position;
             let step = fps * width * currentStep / this.transitionTime;
             var slideAnimation = setInterval(()=>{
                 this.container.style.left = parseFloat(this.container.style.left.replace('px','')) - step   + 'px';
+                console.log(this.container.style.left)
+                if(parseInt(this.container.style.left.replace('px','')) == target*width*-1){
+                    console.log('Ok');
+                    clearInterval(slideAnimation);
+                }
             }, fps);
-            setTimeout(()=>{
-                clearInterval(slideAnimation);
-            },this.transitionTime);
         }
 
         this.defaultSlider = setInterval(()=>{
