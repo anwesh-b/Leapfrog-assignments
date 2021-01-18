@@ -24,8 +24,8 @@ class Ant{
 
     generateInitialPoint = function(radius){
         return {
-            x: randomGenerator(0, width),
-            y: randomGenerator(0, height)
+            x: randomGenerator(this.radius, width - this.radius),
+            y: randomGenerator(this.radius, height - this.radius)
         }
     }
     
