@@ -27,7 +27,6 @@ const yVelocity = 1;
 class Ball{
     constructor(ballno){
         this.createBall(ballno);
-        this.autoMove();
     }
     
     createBall = function(){
@@ -62,11 +61,9 @@ class Ball{
     }
 
     autoMove = function(){
-        this.movement = setInterval(()=>{
-            this.move();
-            collisionDetection();
-            // collisionDetection();
-        },renderTime);
+        this.move();
+        collisionDetection();
+        this.render();        
     }
 
     autoMoveStop = function(){clearInterval(this.movement);}

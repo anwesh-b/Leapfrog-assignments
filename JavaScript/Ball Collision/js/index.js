@@ -1,4 +1,4 @@
-let totalBall =100;
+let totalBall = 100;
 const balls = [];
 
 function draw(x){
@@ -7,11 +7,14 @@ function draw(x){
     }    
 }
 
-draw(totalBall);
 
-setInterval(()=>{
+function animation(){
+    requestAnimationFrame(animation);
     ctx.clearRect(0,0,canvas.width, canvas.height)
     balls.forEach((ball)=>{
-        ball.render();
+        ball.autoMove();
     })
-},10)
+}
+
+draw(totalBall);
+animation();
