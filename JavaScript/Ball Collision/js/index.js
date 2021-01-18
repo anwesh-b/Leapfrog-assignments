@@ -7,8 +7,6 @@ function draw(x){
     }    
 }
 
-
-
 draw(totalBall);
 
 setInterval(()=>{

@@ -35,6 +35,7 @@ class Ball{
         this.xMovement = randomGenerator(-2,2);
         this.yMovement = randomGenerator(-2,2);
         this.radius = randomGenerator(5,20);
+        this.mass = this.radius * Math.PI;
         this.coordinate = this.generateInitialPoint(this.radius);
     }
 
