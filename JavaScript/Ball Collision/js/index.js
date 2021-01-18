@@ -7,7 +7,6 @@ function draw(x){
     }    
 }
 
-
 function animation(){
     requestAnimationFrame(animation);
     ctx.clearRect(0,0,canvas.width, canvas.height)

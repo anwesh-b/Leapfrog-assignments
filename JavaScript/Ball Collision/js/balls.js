@@ -62,16 +62,10 @@ class Ball{
 
     autoMove = function(){
         this.move();
-        collisionDetection();
+        collisionDetectionAndGenSpeed();
         this.render();        
     }
-
-    autoMoveStop = function(){clearInterval(this.movement);}
 }
 
-function nextPosition(x){
-    return{
-        x: x.coordinate.x + x.xMovement,
-        y: x.coordinate.y + x.yMovement
-    }
-} 
+function nextxPosition(x) {return x.coordinate.x + x.xMovement} 
+function nextyPosition(x) {return x.coordinate.y + x.yMovement} 
