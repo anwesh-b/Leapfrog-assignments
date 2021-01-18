@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+}
+
+canvas{
+    background: rgba(206, 224, 239, 1);
+}
+
+.ball{
+    position: absolute;
+}
