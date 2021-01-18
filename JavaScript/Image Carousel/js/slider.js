@@ -7,7 +7,8 @@ class Carousel{
         this.sliderTime = sliderTime || 2000;
         this.height = 200;
         this.position = 0;
-        
+        this.moving = false;
+        this.autoPlay = true;
         this.carouselContainer = document.getElementsByClassName(selectdiv)[0];
         if(selectdiv!=='carousel-container'){
             this.carouselContainer.setAttribute('class',`carousel-container ${selectdiv}`);
@@ -20,8 +21,6 @@ class Carousel{
             this.carouselContainer.innerHTML = '';
             this.carouselContainer.appendChild(this.container);
         }
-
-
 
         this.createButtons = function(){
             this.buttonContainer = document.createElement('div');
@@ -37,7 +36,7 @@ class Carousel{
                 this.buttonContainer.appendChild(this.button[i]);
 
                 this.button[i].addEventListener('click',()=>{
-                    this.slideTo(i);
+                    if(!this.moving) this.slideTo(i);
                 })
 
             }
@@ -51,15 +50,14 @@ class Carousel{
             this.leftControl.innerHTML = '<';
 
             this.leftControl.addEventListener('click',()=>{
-                this.slideTo(this.position - 1);
+                if(!this.moving) this.slideTo(this.position - 1);
             })
 
             this.rightControl = document.createElement('button');
             this.rightControl.setAttribute('class','carousel-right-control');
             this.rightControl.innerHTML = '>';
             this.rightControl.addEventListener('click',()=>{
-                this.slideTo(this.position + 1);
-                
+                if(!this.moving) this.slideTo(this.position + 1);
             })
 
             this.leftControl.style.top = this.rightControl.style.top = (this.height - 40) / 2 + 'px';
@@ -88,8 +86,7 @@ class Carousel{
                 this.container.style.left = parseFloat(this.container.style.left.replace('px','')) - step   + 'px';
                 if(Math.abs(parseInt(this.container.style.left.replace('px','')) - (target*width*-1)) < 1){
                     clearInterval(slideAnimation);
-                    this.leftControl.disabled = false;
-                    this.rightControl.disabled = false;
+                    this.moving = false;
                 }
                 if(Math.abs(parseInt(this.container.style.left.replace('px','')))>width*this.imgs){
                     this.container.style.left = '0px';
@@ -99,7 +96,9 @@ class Carousel{
 
         this.defaultSlider = function(){
             this.autoSlide = setInterval(()=>{
-                this.slideTo(this.position+1);
+                if(this.autoPlay){
+                    this.slideTo(this.position+1);
+                }
             },this.sliderTime)
         }
         
@@ -109,17 +108,13 @@ class Carousel{
         
         this.defaultSlider();
         
-        window.addEventListener('blur',(x)=>{
-            this.stopSlider();
-        })
-
-        window.addEventListener('focus',()=>{
-            this.defaultSlider();
+        document.addEventListener('visibilitychange',(x)=>{
+            if (document.visibilityState === 'hidden') this.autoPlay = false;
+            if (document.visibilityState === 'visible') this.autoPlay = true;
         })
 
         this.slideTo = function(target){
-            this.leftControl.disabled = true;
-            this.rightControl.disabled = true;
+            this.moving = true;
             this.button[this.position].setAttribute('class','carousel-button');
             if(target > this.imgs-1){
                 target = 0;
@@ -127,11 +122,11 @@ class Carousel{
             if(target < 0){
                 target = this.imgs - 1;
             }
-            this.slide(target).then(()=>{
+            this.slide(target)
                 this.container.style.left = parseInt(this.container.style.left.replace('px','')) + 'px';
                 this.position = target
                 this.button[this.position].setAttribute('class','carousel-button active');
-            });
+            
         }
     }    
 
