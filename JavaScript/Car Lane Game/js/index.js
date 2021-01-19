@@ -11,6 +11,9 @@ const playBtn = document.getElementsByClassName('play');
 const currentScore = document.getElementById('points current');
 const highScore = document.getElementById('points highest');
 
+const bulletAvailable = document.getElementsByClassName("bullet")[0];
+
+
 if (localStorage.getItem("car-game-highscore")) highScore.innerHTML = localStorage.getItem("car-game-highscore");
 
 for (let btn of playBtn){

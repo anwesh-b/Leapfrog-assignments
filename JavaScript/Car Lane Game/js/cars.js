@@ -17,7 +17,6 @@ class ObstracleCar{
                     this.lane = parseInt(Math.random()*3);
                     return
                 }
-                console.log(this.top);
                 ctx.drawImage(this.obsImage,positionsX[this.lane],this.top,79,carHeight);
                 this.top += 1.5*speed;
                 if (gameOver) return; 

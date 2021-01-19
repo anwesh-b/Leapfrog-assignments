@@ -38,7 +38,15 @@
 }
 
 canvas{
+    min-width: 600px;
     margin: 10px auto auto;
+    display: none;
+    position: relative;
+}
+.bullet{
+    position: absolute;
+    left: 20vw;
+    top: 75px;
     display: none;
 }
 

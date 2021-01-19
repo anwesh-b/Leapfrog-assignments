@@ -8,6 +8,7 @@ let gameOver = false;
 let score = 0
 let speed = 2;
 let playerPosition = 1;
+let hasBullet = false;
 
 function drawRoad(){
     const road = new Image();
@@ -38,6 +39,21 @@ function drawPlayerCar(){
     }
 }
 
+function drawCarPlayerObstracles(){
+    obs = [];
+    const obs1 = new ObstracleCar(-166);
+    const obs2 = new ObstracleCar(-538);
+    const obs3 = new ObstracleCar(-910);
+    obs.push(obs1);
+    obs.push(obs2);
+    obs.push(obs3);
+    drawRoad();
+    drawPlayerCar();
+    obs1.draw();
+    obs2.draw();
+    obs3.draw();
+}
+
 function updateScore(){
     currentScore.innerHTML = score;
     if (score > highScore.innerHTML) {
@@ -50,16 +66,68 @@ function updateScore(){
 function moveEventLisener(x,leftKey,rightKey){
     // if(x.code === `Key${leftKey.toUpperCase()}`) if(playerPosition > 0 ) playerPosition -=1;
     // if(x.code === `Key${rightKey.toUpperCase()}`) if(playerPosition < positionsX.length-1 ) playerPosition +=1
-    if(x.code === 'KeyA') if(playerPosition > 0 ) playerPosition -=1;
-    if(x.code === 'KeyD') if(playerPosition < positionsX.length-1 ) playerPosition +=1
+    if(x.key === 'a') if(playerPosition > 0 ) playerPosition -=1;
+    if(x.key === 'd') if(playerPosition < positionsX.length-1 ) playerPosition +=1
 }
 
 function setMoveEvents(){window.addEventListener('keydown',moveEventLisener)}
 
 function manageSpeed(){
-    speed *= 1.001;
+    speed *= 1.0002;
     requestAnimationFrame(manageSpeed);
 }
+
+function manageBullet(){
+    setTimeout(grantBulet,10*1000);
+    
+    function grantBulet(){
+        bulletAvailable.style.display = 'block';
+        console.log('bullet available');
+        hasBullet = true;
+        window.addEventListener('keypress',bulletShotListener);
+    }
+
+    function bulletShotListener(x){
+        if (x.key === " "){
+            bulletAvailable.style.display = 'none';
+            bulletAnimation();
+            hasBullet = false;
+            window.removeEventListener('keypress',bulletShotListener);
+            setTimeout(grantBulet,10*1000);
+        }
+    }
+
+    function detectBulletCollision(y,pos){
+        for (let obstracle of obs){
+            if (obstracle.top <= y && pos===obstracle.lane && y - obstracle.top <= 146){
+                obstracle.top -= 1116;
+                console.log('Booom');
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function bulletAnimation(){
+        let bulletTop = playerTop;
+        const Bullet = new Image();
+        const bullerIndex = playerPosition;
+        const bulletPos = positionsX[bullerIndex]+30;
+        Bullet.src = './images/bullet.png'
+        Bullet.onload = ()=>{            
+            const renderBullet = ()=>{
+                ctx.drawImage(Bullet,bulletPos ,bulletTop,19,75);            
+                bulletTop -= speed*2;
+                if (bulletTop < -75) return;
+                if (detectBulletCollision(bulletTop,bullerIndex)) return;
+                requestAnimationFrame(renderBullet);
+            }
+            renderBullet();
+        }
+
+    }
+}
+
 
 function calculateScore(){
     function scoreCalc(){
@@ -91,22 +159,12 @@ function checkCollision(){
 }
 
 function initGame(){
-    obs = [];
-    const obs1 = new ObstracleCar(-166);
-    const obs2 = new ObstracleCar(-538);
-    const obs3 = new ObstracleCar(-910);
-    obs.push(obs1);
-    obs.push(obs2);
-    obs.push(obs3);
-    drawRoad();
-    drawPlayerCar();
-    obs1.draw();
-    obs2.draw();
-    obs3.draw();
+    drawCarPlayerObstracles();
     gameOver = false;
     speed = 2;
     setMoveEvents('a','d');
     manageSpeed();
+    manageBullet();
     calculateScore();
     checkCollision();
 }
