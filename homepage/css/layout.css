@@ -1,7 +1,7 @@
 body{
     width: 25em;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 
@@ -22,7 +22,7 @@ table{
 }
 
 th,td{
-    padding: 5px 9px;
+    padding: 4px 9px;
 }
 
 @media only screen and (min-width: 600px){
@@ -30,6 +30,6 @@ th,td{
         width: 35em;
     }
     th,td{
-        padding: 9px;
+        padding: 6px 9px;
     }
 }
