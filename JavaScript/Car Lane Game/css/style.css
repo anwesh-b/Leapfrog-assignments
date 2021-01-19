@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pre-game{
+    width: 100%;
+    max-width: 500px;
+    background: rgb(166, 188, 250);
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    min-height: 80vh;
+}
+
+.post-game{
+    width: 100%;
+    max-width: 500px;
+    background: rgb(166, 188, 250);
+    margin: 0 auto;
+    text-align: center;
+    min-height: 80vh;
+    padding: 50px 0;
+    display: none;
+}
+
+.play{
+    width: 200px;
+    padding: 15px 0;
+    background-color: rgb(145, 0, 24);
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 109px;
+}
+
+canvas{
+    margin: 10px auto auto;
+    display: none;
+}
+
+#game-over{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#points{
+    font-size: 25px;
+}
