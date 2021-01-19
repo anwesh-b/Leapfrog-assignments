@@ -6,7 +6,7 @@ const positionsX = [38,208,375]
 let obs = [];
 let gameOver = false;
 let score = 0
-let speed = 1.5;
+let speed = 2;
 let playerPosition = 1;
 
 function drawRoad(){
@@ -40,7 +40,7 @@ function drawPlayerCar(){
 
 function updateScore(){
     currentScore.innerHTML = score;
-    if (currentScore.innerHTML > highScore.innerHTML) {
+    if (score > highScore.innerHTML) {
         localStorage.setItem("car-game-highscore", score);
         highScore.innerHTML = score
     };
@@ -57,9 +57,8 @@ function moveEventLisener(x,leftKey,rightKey){
 function setMoveEvents(){window.addEventListener('keydown',moveEventLisener)}
 
 function manageSpeed(){
-    // setInterval(()=>{
-    //     speed *= 1.05;
-    // },2*1000)
+    speed *= 1.001;
+    requestAnimationFrame(manageSpeed);
 }
 
 function calculateScore(){
@@ -93,9 +92,9 @@ function checkCollision(){
 
 function initGame(){
     obs = [];
-    const obs1 = new ObstracleCar(-196);
-    const obs2 = new ObstracleCar(-556);
-    const obs3 = new ObstracleCar(-916);
+    const obs1 = new ObstracleCar(-166);
+    const obs2 = new ObstracleCar(-538);
+    const obs3 = new ObstracleCar(-910);
     obs.push(obs1);
     obs.push(obs2);
     obs.push(obs3);
@@ -105,6 +104,7 @@ function initGame(){
     obs2.draw();
     obs3.draw();
     gameOver = false;
+    speed = 2;
     setMoveEvents('a','d');
     manageSpeed();
     calculateScore();
