@@ -9,8 +9,22 @@ body{
 
 canvas{
     background: rgba(206, 224, 239, 1);
+    position: relative;
 }
 
-.ball{
+
+.text{
     position: absolute;
+    left: 0;
+    top: 0;
+}
+
+ul{
+    font-size: 20px;
+}
+
+li{
+    margin: 0 15px;
+    display: inline;
+    cursor: pointer;
 }

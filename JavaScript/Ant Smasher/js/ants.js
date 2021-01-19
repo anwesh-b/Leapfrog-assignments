@@ -40,12 +40,6 @@ class Ant{
         this.coordinate.x += this.xMovement;
         this.coordinate.y += this.yMovement;
     }
-
-    autoMove = function(){
-        this.move();
-        collisionDetectionAndGenSpeed();
-        this.render();   
-    }
 }
 
 function nextxPosition(x) {return x.coordinate.x + x.xMovement} 

@@ -7,12 +7,13 @@ function collisionDetectionAndGenSpeed(){
                 let ymove = Math.sign(balls[i].yMovement) * Math.sign(balls[j].yMovement);
                 let temp1 = balls[i].xMovement;
                 let temp2 = balls[j].xMovement;
-                balls[i].xMovement = getSpeed(i,j,temp1,temp2) * xmove * -1;
-                balls[j].xMovement = getSpeed(j,i,temp2, temp1) * xmove * -1;
-                temp1 = balls[i].yMovement;
-                temp2 = balls[j].yMovement;
-                balls[i].yMovement = getSpeed(i,j,temp1,temp2) * ymove * -1;
-                balls[j].yMovement = getSpeed(j,i,temp2, temp1) * ymove * -1;
+                let temp3 = balls[i].yMovement;
+                let temp4 = balls[j].yMovement;
+  
+                balls[i].xMovement = getSpeed(i,j,temp3,temp4) * xmove ;
+                balls[j].xMovement = getSpeed(j,i,temp4, temp3) * xmove ;
+                balls[i].yMovement = getSpeed(i,j,temp1,temp2) * ymove ;
+                balls[j].yMovement = getSpeed(j,i,temp2, temp1) * ymove ;
             }
         }
     }
@@ -30,3 +31,5 @@ function distance(x1, y1, x2, y2) {
 function randomGenerator(min, max){
     return Math.random() * (max - min) + min;
 }
+
+function getHypotenuse(p,b) { return Math.sqrt(p**2+b**2)}

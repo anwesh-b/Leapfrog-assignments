@@ -11,7 +11,11 @@ function animation(){
     requestAnimationFrame(animation);
     ctx.clearRect(0,0,canvas.width, canvas.height)
     ants.forEach((ant)=>{
-        ant.autoMove();
+        ant.move();
+    })
+    collisionDetectionAndGenSpeed();
+    ants.forEach((ant)=>{
+        ant.render();
     })
 }
 

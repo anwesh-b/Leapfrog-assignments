@@ -1,9 +1,9 @@
-let totalBall = 100;
-const balls = [];
+let balls = [];
 
-function draw(x){
+function draw(x,minR,maxR){
+    balls = [];
     for (let i = 0;i<x; i++){
-        balls[i] = new Ball();
+        balls[i] = new Ball(minR,maxR);
     }    
 }
 
@@ -11,9 +11,14 @@ function animation(){
     requestAnimationFrame(animation);
     ctx.clearRect(0,0,canvas.width, canvas.height)
     balls.forEach((ball)=>{
-        ball.autoMove();
+        ball.move();
     })
+    collisionDetectionAndGenSpeed();
+    balls.forEach((ball)=>{
+        ball.render(); 
+    })
+    
 }
 
-draw(totalBall);
+draw(100,5,20);
 animation();

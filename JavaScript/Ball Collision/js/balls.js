@@ -25,15 +25,15 @@ const colors = [
 const xVelocity = 1;
 const yVelocity = 1;
 class Ball{
-    constructor(ballno){
-        this.createBall(ballno);
+    constructor(maxRadius=5,minRadius=20){
+        this.createBall(maxRadius,minRadius);
     }
     
-    createBall = function(){
+    createBall = function(maxRadius,minRadius){
         this.ballColor = colors[parseInt(Math.random()*colors.length)]
         this.xMovement = randomGenerator(-2,2);
         this.yMovement = randomGenerator(-2,2);
-        this.radius = randomGenerator(5,20);
+        this.radius = randomGenerator(minRadius,maxRadius);
         this.mass = this.radius * Math.PI;
         this.coordinate = this.generateInitialPoint(this.radius);
     }
@@ -54,16 +54,10 @@ class Ball{
     }
 
     move = function(){
-        if (Math.abs( this.coordinate.x-width + this.radius) <= this.xMovement  ||  this.coordinate.x + this.xMovement >= width  ||  this.coordinate.x + this.xMovement - this.radius <= 0 ) this.xMovement *= -1;
-        if (Math.abs(this.coordinate.y-height + this.radius) <= this.yMovement  ||  this.coordinate.y + this.yMovement >= height  ||  this.coordinate.y + this.yMovement - this.radius <= 0 ) this.yMovement *= -1;
+        if (Math.abs( this.coordinate.x-width + this.radius) <= this.xMovement  ||  this.coordinate.x + this.xMovement - this.radius <= 0 ) this.xMovement *= -1;
+        if (Math.abs(this.coordinate.y-height + this.radius) <= this.yMovement  ||  this.coordinate.y + this.yMovement - this.radius <= 0 ) this.yMovement *= -1;
         this.coordinate.x += this.xMovement;
         this.coordinate.y += this.yMovement;
-    }
-
-    autoMove = function(){
-        this.move();
-        collisionDetectionAndGenSpeed();
-        this.render();        
     }
 }
 
