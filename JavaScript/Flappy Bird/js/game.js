@@ -32,8 +32,6 @@ const obs = []
 let downVel = 0;
 
 
-
-
 let timer;
 function setGravityTimer(){
     timer = setInterval(()=>{
@@ -65,23 +63,6 @@ function loadBird(){
             birdAimation();
         }
     }
-
-    function setMovements(){
-        window.addEventListener('keydown',(x)=>{
-            if(x.key == 'ArrowUp' || x.key == 'w') {
-                if(downVel>-0.4){
-                    downVel = -1;
-                }else if(downVel<-2){
-                    downVel = downVel;
-                }
-                else{
-                    downVel -=0.3;
-                }
-            }
-            // if(x.key == 'ArrowDown' || x.key == 's') birdY += 10;
-        })
-    }
-    setMovements();
     drawBird();
 }
 
@@ -148,6 +129,22 @@ function loadAllAssets(){
     loadBorders();
 }
 
+function setMovements(){
+    function moveUp(){
+        if(downVel>-0.4){
+            downVel = -1;
+        }else if(downVel<-2){
+            downVel = downVel;
+        }
+        else{
+            downVel -=0.3;
+        }
+    }
+    window.addEventListener('keydown',(x)=>{
+        if(x.key === 'ArrowUp' || x.key === 'w' || x.key === ' ') moveUp();
+    })
+}
+
 function detectCollision(){
     if( birdY <= borderHeight || birdY+birdHeight >= borderHeight+playableHeight ) return true;    
     for(let pipe of obs){
@@ -173,6 +170,7 @@ function calculateScore(){
         if (!checkobs.isScored && checkobs.left < birdX - 40 ){
             checkobs.isScored = true;
             score++;
+            currentScoreDOM.innerHTML = score;
         }
     }
     requestAnimationFrame(calculateScore)
@@ -189,6 +187,8 @@ function init(){
     detectGameState();
     calculateScore();
 }
+
+setMovements();
 
 
 

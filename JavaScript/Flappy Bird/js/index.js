@@ -7,11 +7,13 @@ const restart = document.getElementsByClassName('restart')[0];
 
 const scoreDOM = document.getElementById('current-score');
 const highscoreDOM = document.getElementById('high-score');
+const currentScoreDOM = document.getElementById('runnnigScore');
 
 function gameStart(){
     preGame.style.display = 'none';
     postGame.style.display = 'none';
     restart.style.display = 'block';
+    currentScoreDOM.innerHTML = '0';
     init();
 }
 

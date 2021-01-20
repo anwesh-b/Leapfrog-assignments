@@ -10,6 +10,9 @@
     <div class="container">
         <div class="pre-game">
             <img id="icon" src="./images/logo.png">
+            <div class="score">
+                Press W, &#8593;, or 'SpaceBar' to Jump
+            </div>
             <img id="start" src="./images/play.png" onclick="gameStart()">
         </div>
         <canvas></canvas>
@@ -21,7 +24,7 @@
             <img id="icon" src="./images/gameover.png">
             <img id="start" src="./images/play.png" onclick="gameStart()">
         </div>
-        <div class="restart" onclick="gameStart()"><img src="./images/restart.png"></div>
+        <div class="restart"><img src="./images/restart.png" onclick="gameStart()"> Score: <span id="runnnigScore">0</span></div>
     </div>
     
     <script src="./js/utils.js"></script>
