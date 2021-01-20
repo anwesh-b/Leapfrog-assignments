@@ -7,7 +7,23 @@
     <title>Flappy Bird</title>
 </head>
 <body>
-    <canvas></canvas>
+    <div class="container">
+        <div class="pre-game">
+            <img id="icon" src="./images/logo.png">
+            <img id="start" src="./images/play.png" onclick="gameStart()">
+        </div>
+        <canvas></canvas>
+        <div class="post-game">
+            <div class="score">
+                Score: <span id="current-score"></span><br>
+                High Score: <span id="high-score"></span>
+            </div>
+            <img id="icon" src="./images/gameover.png">
+            <img id="start" src="./images/play.png" onclick="gameStart()">
+        </div>
+        <div class="restart" onclick="gameStart()"><img src="./images/restart.png"></div>
+    </div>
+    
     <script src="./js/utils.js"></script>
     <script src="./js/obstracle.js"></script>
     <script src="./js/index.js"></script>

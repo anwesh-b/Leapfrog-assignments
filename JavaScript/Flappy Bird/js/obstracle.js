@@ -9,7 +9,6 @@ class Obstracle{
         this.top = randomGenerator(-166,50);
         this.isScored = false;
         this.botTop = this.top +obsHeight+this.Gap;
-        console.log(this.top,this.botTop);
     }
     draw(){
         const obsTop = new Image();
@@ -18,6 +17,7 @@ class Obstracle{
         obsBot.src = './images/obstracleBottom.png'
         obsTop.onload = ()=>{  
             const obsAimation = ()=>{
+                if (gameOver) return;
                 ctx.drawImage(obsTop,this.left,this.top,obsWidth,obsHeight);
                 this.left-=xSpeed;
                 if(this.left < -50) {
@@ -33,6 +33,7 @@ class Obstracle{
         }
         obsBot.onload = ()=>{
             const obsAimation = ()=>{
+                if (gameOver) return;
                 ctx.drawImage(obsBot,this.left,this.botTop,obsWidth,obsHeight);
                 requestAnimationFrame(obsAimation);
             }

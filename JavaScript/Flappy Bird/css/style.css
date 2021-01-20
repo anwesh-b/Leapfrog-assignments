@@ -3,8 +3,67 @@
     padding: 0;
 }
 
+.container{
+    height: 100%;
+    width: 800px;
+    margin: 10px auto 0 auto;
+    padding-top: 10px;
+    position: relative;
+}
+
+.pre-game,.post-game{
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    height: 600px;
+    width: 800px;
+}
+
+.pre-game{
+    background-image: url('../images/startbg.png');
+}
+
+#icon{
+    position: absolute;
+    top: 100px;
+    height: 100px;
+    left: 215px;
+}
+
+#start{
+    position: absolute;
+    top: 350px;
+    left: 310px;
+    height: 100px;
+}
+
 canvas{
-    background-color: red;
-    margin: 10px auto 50px auto;
+    top: 0;
+    z-index: 2;
     display: block;
+    position: absolute;
+}
+
+.post-game{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    display: none;
+}
+
+.restart{
+    position: absolute;
+    z-index: 5;
+    height: 30px;
+    width: 30px;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+.score{
+    margin-top: 250px;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
 }

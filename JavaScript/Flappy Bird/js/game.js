@@ -14,15 +14,21 @@ const maxGap = 192;
 const minGap = 100;
 const obstraclePositions = [400, 625, 850, 1075];
 
+//Borders Constants
+const borderHeight = (height - playableHeight) /2;
+
+
 canvas.height = height;
 canvas.width = width;
 
 //
+let score = 0;
+let highScore = localStorage.getItem("flappy-bird-highscore");
+
 let xSpeed = 2;
 let gameOver = false;
 let birdY = height /2;
 const obs = []
-let score;
 
 function loadBird(){
     let birdNo = 0;
@@ -36,6 +42,7 @@ function loadBird(){
     
         birdImg.onload = ()=>{
             const birdAimation = ()=>{
+                if (gameOver) return;
                 ctx.drawImage(birdImg,birdX,birdY,birdWidth,birdHeight);
                 requestAnimationFrame(birdAimation);
             }
@@ -49,14 +56,8 @@ function loadBird(){
             if(x.key == 'ArrowDown' || x.key == 's') birdY += 10;
         })
     }
-
-    // function collisionDetection(){
-    //     if(x.)
-    // }
-
     setMovements();
     drawBird();
-    // collisionDetection();
 }
 
 function loadBackground(){
@@ -66,6 +67,7 @@ function loadBackground(){
         bG[i].src = './images/bg.png';
         bG[i].onload = ()=>{
             const bgAnimate = ()=>{
+                if (gameOver) return;
                 bG[i].left -=xSpeed/2;
                 if(bG[i].left<= -1 * width / 2) bG[i].left = width;
                 ctx.drawImage(bG[i],bG[i].left,0,width/2,height);
@@ -77,7 +79,6 @@ function loadBackground(){
 }
 
 function loadBorders(){
-    const borderHeight = (height - playableHeight) /2;
     const bordersTop = [new Image(),new Image(), new Image()]
     const bordersBot = [new Image(),new Image(), new Image()]
     for (let i=0; i<bordersTop.length; i++){
@@ -85,6 +86,7 @@ function loadBorders(){
         bordersTop[i].src = './images/borderBot.png';
         bordersTop[i].onload = ()=>{
             const borderAnimate = ()=>{
+                if (gameOver) return;
                 bordersTop[i].left -=xSpeed;
                 if(bordersTop[i].left<= -1 * width / 2) bordersTop[i].left = width;
                 ctx.drawImage(bordersTop[i],bordersTop[i].left,0,width/2,borderHeight);
@@ -99,6 +101,7 @@ function loadBorders(){
         bordersBot[i].src = './images/borderTop.png';
         bordersBot[i].onload = ()=>{
             const borderAnimate = ()=>{
+                if (gameOver) return;
                 bordersBot[i].left -=xSpeed;
                 if(bordersBot[i].left<= -1 * width / 2) bordersBot[i].left = width;
                 ctx.drawImage(bordersBot[i],bordersBot[i].left,borderHeight+playableHeight,width/2,borderHeight);
@@ -121,6 +124,25 @@ function loadAllAssets(){
     loadBorders();
 }
 
+function detectCollision(){
+    if( birdY <= borderHeight || birdY+birdHeight >= borderHeight+playableHeight ) return true;    
+    for(let pipe of obs){
+        if ( birdY < pipe.top + obsHeight || birdY+birdHeight-2 > pipe.botTop ){
+            if( birdX+birdWidth > pipe.left &&   birdX < pipe.left+obsWidth ) return true;
+        }
+    }
+}
+
+
+
+function detectGameState(){
+    if (detectCollision()){
+        gameEnd();
+        gameOver = true;
+        return;
+    }
+    requestAnimationFrame(detectGameState);
+}
 
 function calculateScore(){
     for (let checkobs of obs){
@@ -133,9 +155,15 @@ function calculateScore(){
 }
 
 function init(){
-    loadAllAssets();
+    birdY = height /2;
     score = 0;
+    gameOver = false;
+    loadAllAssets();
+    detectGameState();
     calculateScore();
 }
 
-init();
+
+
+
+
