@@ -12,7 +12,8 @@ const currentScore = document.getElementById('points current');
 const highScore = document.getElementById('points highest');
 
 const bulletAvailable = document.getElementsByClassName("bullet")[0];
-
+const scoreCard = document.getElementsByClassName('score')[0];
+const scoreCardValue = document.getElementById('score points');
 
 if (localStorage.getItem("car-game-highscore")) highScore.innerHTML = localStorage.getItem("car-game-highscore");
 

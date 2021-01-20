@@ -9,8 +9,6 @@ let score = 0
 let speed = 2;
 let playerPosition = 1;
 let hasBullet = false;
-let bTimer;
-
 
 function drawRoad(){
     const road = new Image();
@@ -54,6 +52,8 @@ function drawCarPlayerObstracles(){
     obs1.draw();
     obs2.draw();
     obs3.draw();
+    scoreCard.style.display = 'block';
+    scoreCardValue.innerHTML = '0';
 }
 
 function updateScore(){
@@ -80,10 +80,8 @@ function manageSpeed(){
 }
 
 function manageBullet(){    
-    bTimer = window.setTimeout(grantBulet,10*1000);
+    window.setTimeout(grantBulet,10*1000);
     
-    bTimer;
-
     function grantBulet(){
         bulletAvailable.style.display = 'block';
         console.log('bullet available');
@@ -133,12 +131,12 @@ function manageBullet(){
     }
 }
 
-
 function calculateScore(){
     function scoreCalc(){
         for (obstracle of obs){
             if (obstracle.top > 572 && !obstracle.scored) {
                 score++;
+                scoreCardValue.innerHTML = score;
                 obstracle.scored = true;
             }
         }
@@ -148,20 +146,20 @@ function calculateScore(){
     scoreCalc();
 }
 
+function clearAllTimers(){
+    let id = window.setTimeout(function() {}, 0);
+    while (id--) {
+        window.clearTimeout(id); // will do nothing if no timeout with id is present
+    }
+}
+
 function gameOverFunct(){
     window.removeEventListener('keydown',moveEventLisener);
     gameOver = true;
     hasBullet = false;
     bulletAvailable.style.display = 'none';
-    
-    
-    let id = window.setTimeout(function() {}, 0);
-
-    while (id--) {
-        window.clearTimeout(id); // will do nothing if no timeout with id is present
-    }
-    
-    // clearTimeout(bTimer);
+    scoreCard.style.display = 'none';
+    clearAllTimers();
     updateScore();
     canvas.style.display = 'none';
     postGame.style.display = 'block';
@@ -179,7 +177,6 @@ function initGame(){
     gameOver = false;
     speed = 2;
     hasBullet = false;
-
     setMoveEvents('a','d');
     manageSpeed();
     manageBullet();

@@ -58,3 +58,12 @@ canvas{
 #points{
     font-size: 25px;
 }
+
+.score{
+    position: absolute;
+    left: 30vw;
+    top: 10px;
+    display: none;
+    font-size: 25px;
+    font-weight: 700;
+}
