@@ -1,7 +1,7 @@
 //Game Constants
 const height = 600;
 const width = 800;
-const ACCELERATION_DUE_TO_GRAVITY = 9.8;
+const ACCELERATION_DUE_TO_GRAVITY = 0.05;
 const playableHeight = 500
 
 //Bird Constants
@@ -29,6 +29,22 @@ let xSpeed = 2;
 let gameOver = false;
 let birdY = height /2;
 const obs = []
+let downVel = 0;
+
+
+
+
+let timer;
+function setGravityTimer(){
+    timer = setInterval(()=>{
+        downVel +=ACCELERATION_DUE_TO_GRAVITY;
+        birdY += downVel;
+    },1000/60)
+}
+
+function clearGravityTimer(){
+    clearInterval(timer);
+}
 
 function loadBird(){
     let birdNo = 0;
@@ -52,8 +68,17 @@ function loadBird(){
 
     function setMovements(){
         window.addEventListener('keydown',(x)=>{
-            if(x.key == 'ArrowUp' || x.key == 'w') birdY -= 10;
-            if(x.key == 'ArrowDown' || x.key == 's') birdY += 10;
+            if(x.key == 'ArrowUp' || x.key == 'w') {
+                if(downVel>-0.4){
+                    downVel = -1;
+                }else if(downVel<-2){
+                    downVel = downVel;
+                }
+                else{
+                    downVel -=0.3;
+                }
+            }
+            // if(x.key == 'ArrowDown' || x.key == 's') birdY += 10;
         })
     }
     setMovements();
@@ -87,7 +112,6 @@ function loadBorders(){
         bordersTop[i].onload = ()=>{
             const borderAnimate = ()=>{
                 if (gameOver) return;
-                bordersTop[i].left -=xSpeed;
                 if(bordersTop[i].left<= -1 * width / 2) bordersTop[i].left = width;
                 ctx.drawImage(bordersTop[i],bordersTop[i].left,0,width/2,borderHeight);
                 requestAnimationFrame(borderAnimate);
@@ -133,11 +157,11 @@ function detectCollision(){
     }
 }
 
-
-
 function detectGameState(){
+    
     if (detectCollision()){
         gameEnd();
+        clearInterval(timer);
         gameOver = true;
         return;
     }
@@ -158,6 +182,9 @@ function init(){
     birdY = height /2;
     score = 0;
     gameOver = false;
+    downVel = 0;
+    clearGravityTimer();
+    setGravityTimer();
     loadAllAssets();
     detectGameState();
     calculateScore();
