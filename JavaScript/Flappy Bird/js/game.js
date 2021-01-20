@@ -46,12 +46,16 @@ function clearGravityTimer(){
 
 function loadBird(){
     let birdNo = 0;
+    let birdState = 0;
     const birdImg = new Image();
     function drawBird(){
         setInterval(()=>{
             birdNo = (birdNo + 1) % 3;
-            birdImg.src = `./images/bird${birdNo}.png`;
-    
+            if(downVel < 0) birdState = 1;
+            else if(downVel < 1.5) birdState = 0;
+            else if(downVel < 3) birdState = 2;
+            else birdState = 3;
+            birdImg.src = `./images/bird${birdNo}${birdState}.png`;
         },100)
     
         birdImg.onload = ()=>{
@@ -79,7 +83,7 @@ function loadBackground(){
                 ctx.drawImage(bG[i],bG[i].left,0,width/2,height);
                 requestAnimationFrame(bgAnimate);
             }
-        bgAnimate();       
+            bgAnimate();       
         }
     }
 }
@@ -89,7 +93,7 @@ function loadBorders(){
     const bordersBot = [new Image(),new Image(), new Image()]
     for (let i=0; i<bordersTop.length; i++){
         bordersTop[i].left = i*width/2;
-        bordersTop[i].src = './images/borderBot.png';
+        bordersTop[i].src = './images/borderTop.png';
         bordersTop[i].onload = ()=>{
             const borderAnimate = ()=>{
                 if (gameOver) return;
@@ -103,7 +107,7 @@ function loadBorders(){
 
     for (let i=0; i<bordersBot.length; i++){
         bordersBot[i].left = i*width/2;
-        bordersBot[i].src = './images/borderTop.png';
+        bordersBot[i].src = './images/borderBot.png';
         bordersBot[i].onload = ()=>{
             const borderAnimate = ()=>{
                 if (gameOver) return;
