@@ -49,5 +49,10 @@ const assignments = [
         name: 'Car Game',
         demo: 'https://anweshb.com.np/Leapfrog-assignments/JavaScript/Car%20Lane%20Game/',
         code: 'https://github.com/anwesh-b/Leapfrog-assignments/tree/master/JavaScript/Car%20Lane%20Game'
+    },{ 
+        date: '20th Jan, 2021',
+        name: 'Flappy Bird Game',
+        demo: 'https://anweshb.com.np/Leapfrog-assignments/JavaScript/Flappy%20Bird/',
+        code: 'https://github.com/anwesh-b/Leapfrog-assignments/tree/master/JavaScript/Flappy%20Bird'
     }
 ]
