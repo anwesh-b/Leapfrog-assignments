@@ -9,6 +9,8 @@ let score = 0
 let speed = 2;
 let playerPosition = 1;
 let hasBullet = false;
+let bTimer;
+
 
 function drawRoad(){
     const road = new Image();
@@ -73,13 +75,15 @@ function moveEventLisener(x,leftKey,rightKey){
 function setMoveEvents(){window.addEventListener('keydown',moveEventLisener)}
 
 function manageSpeed(){
-    speed *= 1.0002;
+    speed *= 1.00005;
     requestAnimationFrame(manageSpeed);
 }
 
-function manageBullet(){
-    setTimeout(grantBulet,10*1000);
+function manageBullet(){    
+    bTimer = window.setTimeout(grantBulet,10*1000);
     
+    bTimer;
+
     function grantBulet(){
         bulletAvailable.style.display = 'block';
         console.log('bullet available');
@@ -89,6 +93,7 @@ function manageBullet(){
 
     function bulletShotListener(x){
         if (x.key === " "){
+            if (!hasBullet) return;
             bulletAvailable.style.display = 'none';
             bulletAnimation();
             hasBullet = false;
@@ -146,6 +151,17 @@ function calculateScore(){
 function gameOverFunct(){
     window.removeEventListener('keydown',moveEventLisener);
     gameOver = true;
+    hasBullet = false;
+    bulletAvailable.style.display = 'none';
+    
+    
+    let id = window.setTimeout(function() {}, 0);
+
+    while (id--) {
+        window.clearTimeout(id); // will do nothing if no timeout with id is present
+    }
+    
+    // clearTimeout(bTimer);
     updateScore();
     canvas.style.display = 'none';
     postGame.style.display = 'block';
@@ -162,6 +178,8 @@ function initGame(){
     drawCarPlayerObstracles();
     gameOver = false;
     speed = 2;
+    hasBullet = false;
+
     setMoveEvents('a','d');
     manageSpeed();
     manageBullet();
