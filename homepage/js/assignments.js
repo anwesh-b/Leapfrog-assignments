@@ -54,5 +54,10 @@ const assignments = [
         name: 'Flappy Bird Game',
         demo: 'https://anweshb.com.np/Leapfrog-assignments/JavaScript/Flappy%20Bird/',
         code: 'https://github.com/anwesh-b/Leapfrog-assignments/tree/master/JavaScript/Flappy%20Bird'
+    },{ 
+        date: '21st Jan, 2021',
+        name: 'Helix Animation',
+        demo: 'https://anweshb.com.np/Leapfrog-assignments/JavaScript/Helix%20Animation',
+        code: 'https://github.com/anwesh-b/Leapfrog-assignments/tree/master/JavaScript/Helix%20Animation'
     }
 ]
