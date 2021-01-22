@@ -1,5 +1,5 @@
-import { GAME_INNER_HTML, MAX_ANGLE, OFFSET, TIMER, BG_COLOR, BALL_COLOR } from './constant.js';
 import toRadian from './utils.js';
+import { GAME_INNER_HTML, MAX_ANGLE, OFFSET, TIMER, BG_COLOR, BALL_COLOR } from './constant.js';
 
 export class Helix{
     constructor(container, x,y,radius){
