@@ -59,5 +59,10 @@ const assignments = [
         name: 'Helix Animation',
         demo: 'https://anweshb.com.np/Leapfrog-assignments/JavaScript/Helix%20Animation',
         code: 'https://github.com/anwesh-b/Leapfrog-assignments/tree/master/JavaScript/Helix%20Animation'
+    },{ 
+        date: '22nd Jan, 2021',
+        name: 'Ping Pong',
+        demo: 'https://anweshb.com.np/Ping-Pong/',
+        code: 'https://github.com/anwesh-b/Ping-Pong'
     }
 ]
