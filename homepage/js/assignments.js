@@ -62,7 +62,7 @@ const assignments = [
     },{ 
         date: '22nd Jan, 2021',
         name: 'Ping Pong',
-        demo: 'https://anweshb.com.np/Ping-Pong/',
-        code: 'https://github.com/anwesh-b/Ping-Pong'
+        demo: 'https://anweshb.com.np/Pong-Pong/',
+        code: 'https://github.com/anwesh-b/Pong-Pong'
     }
 ]
